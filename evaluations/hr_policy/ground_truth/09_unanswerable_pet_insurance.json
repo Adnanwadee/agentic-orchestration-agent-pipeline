@@ -1,0 +1,20 @@
+{
+  "agent": "hr_onboarding_agent",
+  "goals": {
+    "summarize": []
+  },
+  "goal_details": [
+    {
+      "name": "summarize",
+      "type": "text",
+      "response": "There is not enough approved policy information to confirm whether Apex Solutions provides pet insurance for employees or their dependents.",
+      "keywords": [
+        "not enough approved policy information",
+        "pet insurance",
+        "employees or their dependents"
+      ]
+    }
+  ],
+  "story": "An employee asks about a benefit that is not covered by the approved HR policy sources.",
+  "starting_sentence": "Does Apex Solutions provide pet insurance for employees or their dependents?"
+}

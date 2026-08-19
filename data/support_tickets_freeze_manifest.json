@@ -1,0 +1,53 @@
+{
+  "freeze_version": "g3-support-triage-dataset-v1",
+  "status": "frozen",
+  "supervisor_approval_state": "approved",
+  "approved_at_local": "2026-08-18T00:33:48+03:00",
+  "sha256": {
+    "support_tickets_seed": "40901dbbc12ec559ca1b5fc257adb8b1a3406eac08caca66da970e323ff5d7b3",
+    "support_tickets_ground_truth": "ef1a83c4a379065917bd4220f4db8eaed6ea3ada2715a4c31a6b1948d2075f81",
+    "support_tickets_split": "c56860c4cdf337a9c7c1fa7b465fc2a2bde0703871ed2d3627987c822a798be2"
+  },
+  "ticket_count": 30,
+  "development_count": 15,
+  "held_out_count": 15,
+  "development_ids": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T08",
+    "T09",
+    "T10",
+    "T12",
+    "T14",
+    "T16",
+    "T17",
+    "T19",
+    "T21",
+    "T23",
+    "T27"
+  ],
+  "held_out_ids": [
+    "T05",
+    "T06",
+    "T07",
+    "T11",
+    "T13",
+    "T15",
+    "T18",
+    "T20",
+    "T22",
+    "T24",
+    "T25",
+    "T26",
+    "T28",
+    "T29",
+    "T30"
+  ],
+  "null_urgency_metric_rule": {
+    "rule_id": "null-urgency-separate-reporting-v1",
+    "urgency_accuracy_denominator": "tickets whose ground-truth expected_urgency is non-null",
+    "null_urgency_reporting": "Ground-truth null urgency is not a fifth urgency class and is reported separately as NULL_URGENCY_HANDLING, with Ticket 10 always reported explicitly and Ticket 21 treated as a deliberate development null-urgency fixture."
+  }
+}

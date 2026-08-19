@@ -1,0 +1,97 @@
+[
+    {
+        "role": "user",
+        "content": "How can employees report conduct concerns, and is retaliation allowed?",
+        "type": "text",
+        "event": null,
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": null,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "{\"type\": \"tool_call\", \"name\": \"hr_policy_knowledge_base\", \"args\": {\"query\": \"reporting conduct concerns and retaliation policy\"}, \"id\": \"chatcmpl-tool-9b2ad8f418cc590d\"}",
+        "type": "tool_call",
+        "event": "run.step.delta",
+        "conversational_search_metadata": null,
+        "tool_calls": [
+            {
+                "id": "chatcmpl-tool-9b2ad8f418cc590d",
+                "function": {
+                    "name": "hr_policy_knowledge_base",
+                    "arguments": "{\"query\": \"reporting conduct concerns and retaliation policy\"}"
+                },
+                "type": "function"
+            }
+        ],
+        "tool_call_id": "chatcmpl-tool-9b2ad8f418cc590d",
+        "response_time": 9.677,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "{\"type\": \"tool_response\", \"content\": \"[\\n  {\\n    \\\"title\\\": \\\"code-of-conduct.txt\\\",\\n    \\\"body\\\": \\\"Retaliation against an employee for making a good-faith report is itself a violation of this policy and will be dealt with seriously.\\\\n\\\\n---\\\\n\\\\n## 6. Disciplinary Process\\\\n\\\\nViolations of this policy are handled through Apex Solutions' standard disciplinary process:\\\\n\\\\n1. **Informal discussion** \\\\u2014 for minor first-time issues, the manager addresses the behaviour directly with the employee\\\\n2. **Formal written warning** \\\\u2014 issued for more serious violations or repeated minor violations\\\\n3. **Final written warning** \\\\u2014 issued when prior warnings have not resulted in improvement\\\\n4. **Dismissal** \\\\u2014 for gross misconduct or failure to improve after warnings\\\\n\\\\nCertain behaviours (fraud, sexual harassment, serious safety violations) may result in immediate dismissal without prior warning.\\\\n\\\\nEmployees subject to formal disciplinary action have the right to be accompanied by a colleague or union representative during meetings.\\\\n\\\\n---\\\\n\\\\n## 7. New Employees\\\\n\\\\nAll new employees are required to complete the following during their first week:\\\\n- Read and acknowledge this Code of Conduct\\\\n- Complete the online harassment prevention module (available on the learning portal)\\\\n- Attend the orientation session covering company values and workplace expectations\\\\n\\\\nAcknowledgement is recorded in the HR portal. Failure to complete these items within the first 10 working days will be flagged to the employee's manager.\\\\n\\\\n---\\\\n\\\\n*For questions about this policy, contact People & Culture at hr@apexsolutions.internal*\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"code-of-conduct.txt\\\",\\n    \\\"body\\\": \\\"# Code of Conduct and Workplace Behaviour Policy\\\\n**Apex Solutions \\\\u2014 People & Culture**  \\\\n**Version 1.8 | Effective January 2025**\\\\n\\\\n---\\\\n\\\\n## 1. Purpose\\\\n\\\\nThis policy sets out the standards of behaviour expected of all Apex Solutions employees, contractors, and representatives. It applies in all work settings \\\\u2014 offices, client sites, remote work environments, and company events.\\\\n\\\\nApex Solutions is committed to a workplace that is respectful, inclusive, and safe for everyone. This policy exists not to constrain but to establish a shared baseline that allows diverse people to work together effectively.\\\\n\\\\n---\\\\n\\\\n## 2. Core Principles\\\\n\\\\nAll employees are expected to act in accordance with the following principles:\\\\n\\\\n**Integrity:** Be honest and transparent in your dealings with colleagues, clients, and the company. Do not misrepresent your work, qualifications, or the company's products and services.\\\\n\\\\n**Respect:** Treat every person with dignity regardless of their role, background, or seniority. Disagreement is healthy; disrespect is not.\\\\n\\\\n**Accountability:** Take ownership of your work, your mistakes, and their consequences. Do not deflect or minimise when things go wrong.\\\\n\\\\n**Confidentiality:** Protect the company's confidential information and that of its clients. Do not share sensitive information with unauthorised parties, including family members.\\\\n\\\\n**Professionalism:** Represent Apex Solutions positively in all interactions. This includes communications on social media where you are identifiable as an employee.\\\\n\\\\n---\\\\n\\\\n## 3.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"code-of-conduct.txt\\\",\\n    \\\"body\\\": \\\"**Professionalism:** Represent Apex Solutions positively in all interactions. This includes communications on social media where you are identifiable as an employee.\\\\n\\\\n---\\\\n\\\\n## 3. Prohibited Conduct\\\\n\\\\nThe following behaviours are prohibited and may result in disciplinary action up to and including dismissal:\\\\n\\\\n### 3.1 Harassment and Discrimination\\\\n- Discrimination on the basis of race, gender, age, religion, disability, sexual orientation, national origin, or any other protected characteristic\\\\n- Sexual harassment, including unwanted physical contact, inappropriate comments, or sending offensive material\\\\n- Bullying: repeated unreasonable behaviour directed at an employee that creates a risk to their health and safety\\\\n- Creating or contributing to a hostile work environment\\\\n\\\\n### 3.2 Dishonesty and Fraud\\\\n- Falsifying timesheets, expense claims, or any company records\\\\n- Misappropriation of company funds, equipment, or other assets\\\\n- Providing false information during recruitment or at any point during employment\\\\n- Plagiarism or misrepresentation of work\\\\n\\\\n### 3.3 Conflicts of Interest\\\\n- Engaging in external work or business activities that compete with Apex Solutions without prior written disclosure and approval\\\\n- Using company resources, contacts, or information for personal financial gain\\\\n- Participating in a decision that directly benefits a family member or close associate without disclosing the relationship\\\\n\\\\n### 3.4 Workplace Safety\\\\n- Reporting to work under the influence of alcohol or illegal substances\\\\n- Engaging in behaviour that endangers the physical safety of colleagues\\\\n- Ignoring safety procedures or emergency protocols\\\\n\\\\n---\\\\n\\\\n## 4.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"code-of-conduct.txt\\\",\\n    \\\"body\\\": \\\"Communication Standards\\\\n\\\\n### Internal Communications\\\\nAll written communications (email, Slack, documents) should be professional and respectful. Assume that any written communication could be seen by anyone in the company.\\\\n\\\\nAvoid: all-caps messages, passive-aggressive language, copying managers on routine messages as a form of pressure, and sending messages outside of business hours with an implicit expectation of immediate response (use Slack's scheduled send feature instead).\\\\n\\\\n### External Communications\\\\nEmployees communicating with clients or partners represent the company. Communications should be clear, measured, and consistent with agreed positions. Do not make commitments to clients that have not been approved by your manager.\\\\n\\\\n### Social Media\\\\nEmployees may identify themselves as working at Apex Solutions on personal social media. When doing so:\\\\n- Do not share confidential client or company information\\\\n- Do not make statements that could be interpreted as official company positions\\\\n- Do not disparage clients, colleagues, or the company\\\\n- Add a disclaimer such as \\\\\\\"views are my own\\\\\\\" where appropriate\\\\n\\\\n---\\\\n\\\\n## 5. Reporting Concerns\\\\n\\\\nEmployees who witness or experience behaviour that violates this policy are encouraged to report it. Reports can be made to:\\\\n\\\\n- **Direct manager** (if the concern does not involve the manager)\\\\n- **People & Culture:** hr@apexsolutions.internal\\\\n- **Anonymous reporting line:** ethics@apexsolutions.internal (reviewed by an independent party)\\\\n\\\\nAll reports are treated confidentially to the extent possible. Retaliation against an employee for making a good-faith report is itself a violation of this policy and will be dealt with seriously.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"it-access-policy.txt\\\",\\n    \\\"body\\\": \\\"---\\\\n\\\\n## 6. Data Handling and Security\\\\n\\\\nEmployees must store work files on company-approved cloud storage (SharePoint/OneDrive). Local storage of sensitive company or customer data is prohibited unless explicitly approved for offline work scenarios.\\\\n\\\\nSensitive data categories that require additional care:\\\\n- Customer personal information (names, contact details, account data)\\\\n- Financial records and contracts\\\\n- Employee records\\\\n- Intellectual property and proprietary product information\\\\n\\\\nIf an employee suspects a security incident (lost device, suspicious email, unauthorised access), they must report it to the IT Security team immediately at security@apexsolutions.internal. Do not attempt to investigate or resolve a suspected security incident independently.\\\\n\\\\n---\\\\n\\\\n## 7. Equipment Care and Loss\\\\n\\\\nEmployees are responsible for the reasonable care of company equipment. In the event of accidental damage, the employee must notify IT within 24 hours. Intentional damage or gross negligence may result in the employee being held liable for repair or replacement costs.\\\\n\\\\nLost or stolen equipment must be reported to IT Security and the employee's manager immediately. IT Security will remotely wipe the device as soon as the loss is reported.\\\\n\\\\n---\\\\n\\\\n## 8. Offboarding \\\\u2014 Equipment Return and Access Revocation\\\\n\\\\nUpon resignation or termination, employees must return all company equipment on or before their last working day. All system access will be revoked at end-of-day on the employee's last day.\\\\n\\\\nEquipment must be returned in its original condition (reasonable wear and tear accepted) along with all accessories. Failure to return equipment may result in deductions from the final pay.\\\\n\\\\n---\\\\n\\\\n## 9.\\\"\\n  }\\n]\", \"name\": \"hr_policy_knowledge_base\", \"tool_call_id\": \"chatcmpl-tool-9b2ad8f418cc590d\"}",
+        "type": "tool_response",
+        "event": "run.step.delta",
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 0.335,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "Employees can report conduct concerns to their direct manager (if the concern does not involve the manager), People & Culture at hr@apexsolutions.internal, or the anonymous reporting line at ethics@apexsolutions.internal. All reports are treated confidentially to the extent possible. Retaliation against an employee for making a good-faith report is itself a violation of the company's policy and will be dealt with seriously.",
+        "type": "conversational_search",
+        "event": "message.created",
+        "conversational_search_metadata": {
+            "tool_call_id": "chatcmpl-tool-9b2ad8f418cc590d"
+        },
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 8.721,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "user",
+        "content": "Thank you for the clarification. That answers my question.",
+        "type": "text",
+        "event": null,
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": null,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "You're welcome. I'm glad I could provide the information you needed. If you have any other questions or need further assistance during your onboarding process, feel free to ask.",
+        "type": "text",
+        "event": "message.created",
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 7.057,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    }
+]

@@ -4,9 +4,13 @@ This repository is developed gate-by-gate under human supervision.
 
 ## Sources of truth
 
-- Read `docs/PROJECT_SPEC.md` before editing; it is the technical source of truth.
-- Read `docs/EXECUTION_PLAN.md` before editing; it is the execution and progress source.
-- If the two documents conflict, stop and report the conflict.
+- Read `docs/SYSTEM_ARCHITECTURE.md` before editing; it is the final reviewer-facing
+  technical architecture source.
+- Read `artifacts/development_history/PROJECT_SPEC_HISTORY.md` when historical technical
+  decisions or gate chronology matter.
+- Read `artifacts/development_history/PROJECT_EVIDENCE_LEDGER.md` before editing; it is the
+  execution and progress source.
+- If the sources conflict, stop and report the conflict.
 
 ## Scope control
 
@@ -17,6 +21,7 @@ This repository is developed gate-by-gate under human supervision.
 - Never add or change dependencies without explicit supervisor approval.
 - Do not add frameworks, abstractions, or stretch goals outside the specification.
 - If real Watson platform behavior conflicts with the written design, stop and report it.
+- Do not let stage, probe, or spike implementation silently become production code.
 
 ## Evidence and quality
 
@@ -26,8 +31,8 @@ This repository is developed gate-by-gate under human supervision.
 - On Windows, use the repository `.venv` executables for project validation, or otherwise
   prove the active interpreter is that `.venv`; never silently use global Python, pytest, or
   Orchestrate executables.
-- Never invent Watson API, tenant, model, Prompt Node, User Activity, Knowledge Base, or
-  Cloudant behavior.
+- Never invent Watson API, tenant, model, Prompt Node, User Activity, Knowledge Base,
+  persistence, or storage behavior.
 - Never claim remote behavior without observed evidence.
 - Never modify frozen ground truth to improve evaluation results.
 - Never weaken expected tests to match incorrect implementation.
@@ -42,6 +47,14 @@ This repository is developed gate-by-gate under human supervision.
 - Never stage, commit, or push unless explicitly instructed.
 - Preserve unrelated and pre-existing user work.
 - Keep remote Python/tool filenames to safe alphanumeric characters and underscores.
+- Before gate exit, classify temporary assets as DELETE, DURABLE EVIDENCE, or PROMOTE.
+- Promoted production assets must use domain-oriented names.
+- Delete obsolete spikes after durable evidence is recorded.
+- Manual remote cleanup remains supervisor-owned when credentials or tenant mutation are
+  involved.
+- Do not convert Part A into one fixed onboarding Flow; `hr_onboarding_agent` remains the
+  top-level ReAct decision-maker, while IT and booking may use bounded deterministic Flows that
+  receive isolated evidence before final Agent integration.
 
 ## Handoff
 
@@ -52,5 +65,6 @@ Report:
 - unresolved issues or design conflicts;
 - required MANUAL checks and missing evidence.
 
-Gate completion always requires the exit criteria in `docs/EXECUTION_PLAN.md`; a file or
-implementation alone is not proof of completion.
+Gate completion always requires the exit criteria in
+`artifacts/development_history/PROJECT_EVIDENCE_LEDGER.md`; a file or implementation alone is
+not proof of completion.

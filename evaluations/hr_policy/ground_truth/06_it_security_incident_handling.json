@@ -1,0 +1,23 @@
+{
+  "agent": "hr_onboarding_agent",
+  "goals": {
+    "summarize": []
+  },
+  "goal_details": [
+    {
+      "name": "summarize",
+      "type": "text",
+      "response": "If an employee suspects a security incident, such as a lost device, suspicious email, or unauthorised access, they must report it to the IT Security team immediately. Employees must not attempt to investigate or resolve a suspected security incident independently.",
+      "keywords": [
+        "IT Security team immediately",
+        "lost device",
+        "suspicious email",
+        "unauthorised access",
+        "must not attempt",
+        "independently"
+      ]
+    }
+  ],
+  "story": "An employee asks what to do after noticing a possible information security incident.",
+  "starting_sentence": "What should I do if I suspect a security incident?"
+}

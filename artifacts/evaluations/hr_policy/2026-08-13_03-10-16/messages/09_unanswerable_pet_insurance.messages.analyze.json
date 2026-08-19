@@ -1,0 +1,527 @@
+[
+    {
+        "message": {
+            "role": "user",
+            "content": "Does Apex Solutions provide pet insurance for employees or their dependents?",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "{\"type\": \"tool_call\", \"name\": \"hr_policy_knowledge_base\", \"args\": {\"query\": \"Apex Solutions pet insurance for employees or dependents\"}, \"id\": \"chatcmpl-tool-a4566030a759cfc4\"}",
+            "type": "tool_call",
+            "event": "run.step.delta",
+            "conversational_search_metadata": null,
+            "tool_calls": [
+                {
+                    "id": "chatcmpl-tool-a4566030a759cfc4",
+                    "function": {
+                        "name": "hr_policy_knowledge_base",
+                        "arguments": "{\"query\": \"Apex Solutions pet insurance for employees or dependents\"}"
+                    },
+                    "type": "function"
+                }
+            ],
+            "tool_call_id": "chatcmpl-tool-a4566030a759cfc4",
+            "response_time": 6.249,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": {
+            "reason": "irrelevant tool call"
+        }
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "{\"type\": \"tool_response\", \"content\": \"[\\n  {\\n    \\\"title\\\": \\\"benefits-and-compensation.txt\\\",\\n    \\\"body\\\": \\\"### 2.4 Expense Reimbursement\\\\nBusiness expenses (travel, client entertainment, training materials) are reimbursed upon submission of valid receipts through the expense management platform. Expenses must be submitted within 30 days of being incurred. Claims submitted after 30 days may not be approved.\\\\n\\\\nPre-approval is required for any single expense exceeding R5,000. Travel bookings must be made through the company's preferred travel platform unless prior approval for an alternative is obtained.\\\\n\\\\n---\\\\n\\\\n## 3. Medical Aid\\\\n\\\\nApex Solutions contributes to medical aid for all permanent employees. The company covers 60% of the employee's medical aid premium and 50% of premiums for registered dependants.\\\\n\\\\nThe company's preferred medical aid scheme is outlined in the benefits guide distributed during onboarding. Employees may elect to join a different registered scheme, but the company contribution will be capped at the equivalent of the preferred scheme's standard option.\\\\n\\\\nMedical aid enrolment must be completed within 30 days of the employee's start date. Enrolment outside this window may require a waiting period as per the scheme's rules.\\\\n\\\\n---\\\\n\\\\n## 4. Retirement Fund\\\\n\\\\nAll permanent employees are enrolled in the company provident fund from their first day of employment. Contributions are as follows:\\\\n\\\\n- **Employee contribution:** 5% of monthly basic salary\\\\n- **Company contribution:** 8% of monthly basic salary\\\\n\\\\nEmployees may increase their own contribution up to a maximum of 15% of basic salary.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"benefits-and-compensation.txt\\\",\\n    \\\"body\\\": \\\"# Employee Benefits and Compensation Guide\\\\n**Apex Solutions \\\\u2014 People & Culture**  \\\\n**Version 2.0 | Effective January 2025**\\\\n\\\\n---\\\\n\\\\n## 1. Overview\\\\n\\\\nThis guide summarises the benefits available to Apex Solutions employees. Eligibility varies by employment type and tenure as noted in each section. Benefits are reviewed annually and may be updated; employees will be notified of material changes with at least 30 days' notice.\\\\n\\\\n---\\\\n\\\\n## 2. Compensation\\\\n\\\\n### 2.1 Pay Cycles\\\\nEmployees are paid monthly on the last working day of each month. Payslips are available electronically in the HR portal 3 working days before payment.\\\\n\\\\n### 2.2 Annual Salary Reviews\\\\nSalary reviews take place annually in March, effective 1 April. Reviews are based on individual performance ratings from the preceding year's performance cycle and market benchmarking data. A performance rating of \\\\\\\"Meets Expectations\\\\\\\" or above is required to be eligible for a merit increase.\\\\n\\\\n### 2.3 Performance Bonuses\\\\nEmployees at Consultant level and above are eligible for an annual performance bonus. Bonus targets are communicated at the start of each financial year and are calculated as a percentage of base salary. Bonus payments are made in April following the close of the financial year.\\\\n\\\\nNew employees who joined after 1 October of the relevant financial year receive a pro-rated bonus for their period of employment.\\\\n\\\\n### 2.4 Expense Reimbursement\\\\nBusiness expenses (travel, client entertainment, training materials) are reimbursed upon submission of valid receipts through the expense management platform.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"it-access-policy.txt\\\",\\n    \\\"body\\\": \\\"# IT Access and Equipment Policy\\\\n**Apex Solutions \\\\u2014 Information Technology**  \\\\n**Version 2.4 | Effective March 2025**\\\\n\\\\n---\\\\n\\\\n## 1. Overview\\\\n\\\\nThis policy governs the provisioning, use, and return of IT equipment and system access at Apex Solutions. All employees are required to read and acknowledge this policy before IT access is granted.\\\\n\\\\nIT access requests for new employees must be submitted by the hiring manager at least 3 working days before the employee's start date. Late requests may result in the employee not having full system access on their first day.\\\\n\\\\n---\\\\n\\\\n## 2. Standard Equipment Allocation\\\\n\\\\nAll full-time employees receive the following standard equipment upon joining:\\\\n\\\\n| Role Category | Laptop | Monitor | Accessories |\\\\n|---|---|---|---|\\\\n| Developer / Engineer | MacBook Pro 14\\\\\\\" (M3) | 27\\\\\\\" external display | Keyboard, mouse, USB-C hub |\\\\n| Analyst / Consultant | MacBook Air 15\\\\\\\" (M2) | 24\\\\\\\" external display | Keyboard, mouse |\\\\n| Operations / Support | Lenovo ThinkPad L14 | 24\\\\\\\" external display | Keyboard, mouse |\\\\n| Management | MacBook Pro 14\\\\\\\" (M3) | 27\\\\\\\" external display | Keyboard, mouse, USB-C hub |\\\\n\\\\nRequests for non-standard equipment (e.g. a second monitor, a specific keyboard, a standing desk converter) must be submitted via the IT portal and approved by the employee's manager. Non-standard equipment requests are assessed on a case-by-case basis and subject to budget availability.\\\\n\\\\n---\\\\n\\\\n## 3.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"leave-policy.txt\\\",\\n    \\\"body\\\": \\\"# Leave and Time Off Policy\\\\n**Apex Solutions \\\\u2014 People & Culture**  \\\\n**Version 3.1 | Effective January 2025**\\\\n\\\\n---\\\\n\\\\n## 1. Annual Leave\\\\n\\\\nAll full-time employees are entitled to 21 working days of paid annual leave per calendar year. Part-time employees receive leave on a pro-rata basis calculated against a standard 40-hour week.\\\\n\\\\nLeave accrues from the employee's start date at a rate of 1.75 days per month. Employees may not take annual leave during their first 30 days of employment.\\\\n\\\\n**Carrying over leave:** A maximum of 5 unused leave days may be carried over into the following calendar year. Carried-over days must be used by 31 March or they are forfeited. Requests to carry over more than 5 days require written approval from the employee's direct manager and the Head of People & Culture.\\\\n\\\\n**Leave encashment:** Annual leave may not be encashed except upon resignation or termination, in which case unused accrued leave will be paid out at the employee's daily rate.\\\\n\\\\n---\\\\n\\\\n## 2. Sick Leave\\\\n\\\\nEmployees are entitled to 10 days of paid sick leave per calendar year. Sick leave does not accrue and resets on 1 January each year.\\\\n\\\\nFor absences of 1\\\\u20132 consecutive days, self-certification is accepted. For absences of 3 or more consecutive days, a medical certificate from a registered practitioner must be submitted to HR within 5 working days of returning to work.\\\\n\\\\nSick leave may not be used to extend annual leave.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"it-access-policy.txt\\\",\\n    \\\"body\\\": \\\"---\\\\n\\\\n## 6. Data Handling and Security\\\\n\\\\nEmployees must store work files on company-approved cloud storage (SharePoint/OneDrive). Local storage of sensitive company or customer data is prohibited unless explicitly approved for offline work scenarios.\\\\n\\\\nSensitive data categories that require additional care:\\\\n- Customer personal information (names, contact details, account data)\\\\n- Financial records and contracts\\\\n- Employee records\\\\n- Intellectual property and proprietary product information\\\\n\\\\nIf an employee suspects a security incident (lost device, suspicious email, unauthorised access), they must report it to the IT Security team immediately at security@apexsolutions.internal. Do not attempt to investigate or resolve a suspected security incident independently.\\\\n\\\\n---\\\\n\\\\n## 7. Equipment Care and Loss\\\\n\\\\nEmployees are responsible for the reasonable care of company equipment. In the event of accidental damage, the employee must notify IT within 24 hours. Intentional damage or gross negligence may result in the employee being held liable for repair or replacement costs.\\\\n\\\\nLost or stolen equipment must be reported to IT Security and the employee's manager immediately. IT Security will remotely wipe the device as soon as the loss is reported.\\\\n\\\\n---\\\\n\\\\n## 8. Offboarding \\\\u2014 Equipment Return and Access Revocation\\\\n\\\\nUpon resignation or termination, employees must return all company equipment on or before their last working day. All system access will be revoked at end-of-day on the employee's last day.\\\\n\\\\nEquipment must be returned in its original condition (reasonable wear and tear accepted) along with all accessories. Failure to return equipment may result in deductions from the final pay.\\\\n\\\\n---\\\\n\\\\n## 9.\\\"\\n  }\\n]\", \"name\": \"hr_policy_knowledge_base\", \"tool_call_id\": \"chatcmpl-tool-a4566030a759cfc4\"}",
+            "type": "tool_response",
+            "event": "run.step.delta",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 1.019,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": {
+            "reason": "runtime error"
+        }
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "There is not enough approved policy information to confirm whether Apex Solutions provides pet insurance for employees or their dependents.",
+            "type": "conversational_search",
+            "event": "message.created",
+            "conversational_search_metadata": {
+                "tool_call_id": "chatcmpl-tool-a4566030a759cfc4"
+            },
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 2.672,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Could you let me know what steps I should take to find out if pet insurance is offered, or if there’s an alternative resource I can check?",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "You can check the company's benefits guide or contact the HR department directly to inquire about pet insurance options. They should be able to provide you with the most up-to-date information on available benefits.",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 5.675,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks, I’ll review the benefits guide and reach out to HR.",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "You're welcome! I'm glad I could help. Reviewing the benefits guide and reaching out to HR should provide you with the information you're looking for. If you have any other questions or need further assistance, feel free to ask. Have a great day!",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 9.025,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks, I appreciate it!",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "You're welcome. I'm here to help if you need anything else. Have a great day and a smooth onboarding process.",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 5.683,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks, will do!",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "You're welcome. I'm glad I could assist you. If you have any other questions in the future, don't hesitate to reach out. Have a great day.",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 5.735,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks, I will. Have a great day!",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "You too! Have a great day.",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 5.019,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks, you too!",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "It was a pleasure helping you. Take care!",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 6.27,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thank you! Take care.",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "It was nice chatting with you. If you need anything else in the future, feel free to reach out. Have a great day and a successful onboarding process. Goodbye!",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 6.626,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks! I’ll let you know if anything comes up. Have a great day!",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "You're welcome. I'm here if you need anything. Have a great day and a successful onboarding process. Goodbye!",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 5.899,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks, I will. Bye!",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "Bye! Have a great day.",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 7.576,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks, you too!",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "It was a pleasure assisting you. Goodbye!",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 6.389,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks, goodbye!",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "Goodbye!",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 6.176,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks, goodbye!",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "Goodbye!",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 3.975,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks, goodbye!",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "Goodbye!",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 3.756,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    }
+]

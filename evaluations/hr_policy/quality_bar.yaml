@@ -1,0 +1,104 @@
+schema: internal_hr_policy_quality_bar_v1
+not_passed_to_ibm: true
+agent: hr_onboarding_agent
+ibm_config: evaluations/hr_policy/config.yaml
+ground_truth_dir: evaluations/hr_policy/ground_truth
+output_dir: artifacts/evaluations/hr_policy
+internal_acceptance:
+  total_cases: 10
+  answerable_cases: 8
+  unanswerable_cases: 2
+  numeric_bar:
+    minimum_grounded_answerable: 7
+    total_answerable: 8
+    required_unanswerable_abstentions: 2
+    total_unanswerable: 2
+    maximum_fabricated_policy_facts: 0
+  required_domains:
+    - Leave
+    - Benefits/Compensation
+    - Code of Conduct
+    - IT Access
+    - New-Hire Orientation
+  answerable_bar:
+    - answer must be grounded in approved HR source text
+    - answer must preserve eligibility, timing, exception, or scope language when present
+    - answer must not introduce unstated policy benefits, prohibitions, or platform behavior
+  unanswerable_bar:
+    - answer must state that approved policy information is insufficient
+    - answer must not convert absence of evidence into a negative policy conclusion
+    - dependent tuition answer must distinguish employee Study Assistance from dependent tuition reimbursement
+observed_baseline:
+  source: supervisor_audit_of_ibm_run_2026-08-13_03-10-16
+  grounded_answerable: 8
+  unanswerable_abstentions: 2
+  fabricated_policy_facts: 0
+cases:
+  - file: 01_leave_annual_entitlement.json
+    domain: Leave
+    answerable: true
+    source_documents:
+      - mock_docs/leave-policy.md
+    case_kind: supported_positive
+  - file: 02_leave_encashment_limit.json
+    domain: Leave
+    answerable: true
+    source_documents:
+      - mock_docs/leave-policy.md
+    case_kind: supported_negative_prohibition
+  - file: 03_benefits_medical_aid_dependants.json
+    domain: Benefits/Compensation
+    answerable: true
+    source_documents:
+      - mock_docs/benefits-and-compensation.md
+    case_kind: supported_employee_dependent_scope
+  - file: 04_benefits_employee_study_assistance.json
+    domain: Benefits/Compensation
+    answerable: true
+    source_documents:
+      - mock_docs/benefits-and-compensation.md
+    case_kind: supported_employee_only_study_assistance
+  - file: 05_code_conduct_reporting_concerns.json
+    domain: Code of Conduct
+    answerable: true
+    source_documents:
+      - mock_docs/code-of-conduct.md
+    case_kind: supported_reporting_and_retaliation
+  - file: 06_it_security_incident_handling.json
+    domain: IT Access
+    answerable: true
+    source_documents:
+      - mock_docs/it-access-policy.md
+    case_kind: supported_security_incident_handling
+  - file: 07_orientation_first_day_schedule.json
+    domain: New-Hire Orientation
+    answerable: true
+    source_documents:
+      - mock_docs/new-hire-orientation-guide.md
+    case_kind: supported_orientation_information
+  - file: 08_leave_carryover_deadline.json
+    domain: Leave
+    answerable: true
+    source_documents:
+      - mock_docs/leave-policy.md
+    case_kind: supported_timing_exception_scope
+  - file: 09_unanswerable_pet_insurance.json
+    domain: Benefits/Compensation
+    answerable: false
+    source_documents:
+      - mock_docs/benefits-and-compensation.md
+      - mock_docs/leave-policy.md
+      - mock_docs/code-of-conduct.md
+      - mock_docs/it-access-policy.md
+      - mock_docs/new-hire-orientation-guide.md
+    case_kind: intentionally_unanswerable_pet_insurance
+  - file: 10_unanswerable_dependent_tuition.json
+    domain: Benefits/Compensation
+    answerable: false
+    source_documents:
+      - mock_docs/benefits-and-compensation.md
+      - mock_docs/leave-policy.md
+      - mock_docs/code-of-conduct.md
+      - mock_docs/it-access-policy.md
+      - mock_docs/new-hire-orientation-guide.md
+    case_kind: intentionally_unanswerable_dependent_tuition

@@ -1,0 +1,85 @@
+[
+    {
+        "message": {
+            "role": "user",
+            "content": "Does Apex contribute to medical aid for registered dependants?",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "{\"type\": \"tool_call\", \"name\": \"hr_policy_knowledge_base\", \"args\": {\"query\": \"Apex medical aid for registered dependants\"}, \"id\": \"chatcmpl-tool-a345cec1b52da691\"}",
+            "type": "tool_call",
+            "event": "run.step.delta",
+            "conversational_search_metadata": null,
+            "tool_calls": [
+                {
+                    "id": "chatcmpl-tool-a345cec1b52da691",
+                    "function": {
+                        "name": "hr_policy_knowledge_base",
+                        "arguments": "{\"query\": \"Apex medical aid for registered dependants\"}"
+                    },
+                    "type": "function"
+                }
+            ],
+            "tool_call_id": "chatcmpl-tool-a345cec1b52da691",
+            "response_time": 6.844,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": {
+            "reason": "irrelevant tool call"
+        }
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "{\"type\": \"tool_response\", \"content\": \"[\\n  {\\n    \\\"title\\\": \\\"benefits-and-compensation.txt\\\",\\n    \\\"body\\\": \\\"### 2.4 Expense Reimbursement\\\\nBusiness expenses (travel, client entertainment, training materials) are reimbursed upon submission of valid receipts through the expense management platform. Expenses must be submitted within 30 days of being incurred. Claims submitted after 30 days may not be approved.\\\\n\\\\nPre-approval is required for any single expense exceeding R5,000. Travel bookings must be made through the company's preferred travel platform unless prior approval for an alternative is obtained.\\\\n\\\\n---\\\\n\\\\n## 3. Medical Aid\\\\n\\\\nApex Solutions contributes to medical aid for all permanent employees. The company covers 60% of the employee's medical aid premium and 50% of premiums for registered dependants.\\\\n\\\\nThe company's preferred medical aid scheme is outlined in the benefits guide distributed during onboarding. Employees may elect to join a different registered scheme, but the company contribution will be capped at the equivalent of the preferred scheme's standard option.\\\\n\\\\nMedical aid enrolment must be completed within 30 days of the employee's start date. Enrolment outside this window may require a waiting period as per the scheme's rules.\\\\n\\\\n---\\\\n\\\\n## 4. Retirement Fund\\\\n\\\\nAll permanent employees are enrolled in the company provident fund from their first day of employment. Contributions are as follows:\\\\n\\\\n- **Employee contribution:** 5% of monthly basic salary\\\\n- **Company contribution:** 8% of monthly basic salary\\\\n\\\\nEmployees may increase their own contribution up to a maximum of 15% of basic salary.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"leave-policy.txt\\\",\\n    \\\"body\\\": \\\"For absences of 3 or more consecutive days, a medical certificate from a registered practitioner must be submitted to HR within 5 working days of returning to work.\\\\n\\\\nSick leave may not be used to extend annual leave. If an employee falls ill during a period of approved annual leave and can provide a medical certificate, the days may be converted to sick leave at HR's discretion.\\\\n\\\\n---\\\\n\\\\n## 3. Family Responsibility Leave\\\\n\\\\nEmployees are entitled to 3 days of paid family responsibility leave per calendar year for the following events:\\\\n- Death of an immediate family member (spouse, child, parent, sibling)\\\\n- Serious illness of a dependent child requiring the employee's presence\\\\n- Birth of the employee's child (in addition to any parental leave entitlement)\\\\n\\\\nFamily responsibility leave does not accrue and cannot be carried over. Supporting documentation (e.g. death certificate, medical letter) must be submitted to HR within 10 working days.\\\\n\\\\n---\\\\n\\\\n## 4. Parental Leave\\\\n\\\\n**Primary caregiver leave:** Employees who are the primary caregiver for a newborn or newly adopted child are entitled to 16 weeks of paid parental leave. This applies regardless of gender.\\\\n\\\\n**Secondary caregiver leave:** Employees who are not the primary caregiver are entitled to 4 weeks of paid parental leave.\\\\n\\\\nParental leave may commence up to 2 weeks before the expected birth date. Employees must notify HR in writing at least 8 weeks before the intended start of parental leave. Failure to provide notice may result in the start date being deferred.\\\\n\\\\nParental leave runs concurrently with any statutory entitlements.\\\\n\\\\n---\\\\n\\\\n## 5.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"leave-policy.txt\\\",\\n    \\\"body\\\": \\\"# Leave and Time Off Policy\\\\n**Apex Solutions \\\\u2014 People & Culture**  \\\\n**Version 3.1 | Effective January 2025**\\\\n\\\\n---\\\\n\\\\n## 1. Annual Leave\\\\n\\\\nAll full-time employees are entitled to 21 working days of paid annual leave per calendar year. Part-time employees receive leave on a pro-rata basis calculated against a standard 40-hour week.\\\\n\\\\nLeave accrues from the employee's start date at a rate of 1.75 days per month. Employees may not take annual leave during their first 30 days of employment.\\\\n\\\\n**Carrying over leave:** A maximum of 5 unused leave days may be carried over into the following calendar year. Carried-over days must be used by 31 March or they are forfeited. Requests to carry over more than 5 days require written approval from the employee's direct manager and the Head of People & Culture.\\\\n\\\\n**Leave encashment:** Annual leave may not be encashed except upon resignation or termination, in which case unused accrued leave will be paid out at the employee's daily rate.\\\\n\\\\n---\\\\n\\\\n## 2. Sick Leave\\\\n\\\\nEmployees are entitled to 10 days of paid sick leave per calendar year. Sick leave does not accrue and resets on 1 January each year.\\\\n\\\\nFor absences of 1\\\\u20132 consecutive days, self-certification is accepted. For absences of 3 or more consecutive days, a medical certificate from a registered practitioner must be submitted to HR within 5 working days of returning to work.\\\\n\\\\nSick leave may not be used to extend annual leave.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"benefits-and-compensation.txt\\\",\\n    \\\"body\\\": \\\"These days may not be carried over and are separate from the standard sick leave entitlement.\\\\n\\\\n---\\\\n\\\\n## 7. Flexible Work Arrangements\\\\n\\\\n### 7.1 Hybrid Work\\\\nEmployees are expected to work from the office at least 3 days per week unless their role is designated as fully remote. Office days are coordinated at team level \\\\u2014 managers communicate expected in-office days to their teams.\\\\n\\\\n### 7.2 Flexible Hours\\\\nCore hours are 09:00\\\\u201315:00 on working days. Outside of core hours, employees have flexibility to structure their day to suit personal needs, subject to meeting their responsibilities and being available for scheduled meetings.\\\\n\\\\n### 7.3 Work From Abroad\\\\nEmployees may request to work from outside the country for up to 4 weeks per calendar year. Requests require manager approval and HR review (tax and visa implications must be assessed for each country). Work from abroad does not change the employee's employment terms or compensation.\\\\n\\\\n---\\\\n\\\\n## 8. Onboarding Benefits\\\\n\\\\nNew employees receive the following during their first month:\\\\n\\\\n- **Welcome kit:** company-branded notebook, pen set, and laptop bag delivered on day one\\\\n- **Buddy programme:** each new employee is paired with a buddy from their team for their first 90 days\\\\n- **Onboarding stipend:** R1,500 once-off payment in the first payroll to cover home office setup costs (remote/hybrid employees only)\\\\n\\\\n---\\\\n\\\\n*For benefits queries, contact People & Culture at hr@apexsolutions.internal or visit the benefits section of the HR portal.*\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"it-access-policy.txt\\\",\\n    \\\"body\\\": \\\"# IT Access and Equipment Policy\\\\n**Apex Solutions \\\\u2014 Information Technology**  \\\\n**Version 2.4 | Effective March 2025**\\\\n\\\\n---\\\\n\\\\n## 1. Overview\\\\n\\\\nThis policy governs the provisioning, use, and return of IT equipment and system access at Apex Solutions. All employees are required to read and acknowledge this policy before IT access is granted.\\\\n\\\\nIT access requests for new employees must be submitted by the hiring manager at least 3 working days before the employee's start date. Late requests may result in the employee not having full system access on their first day.\\\\n\\\\n---\\\\n\\\\n## 2. Standard Equipment Allocation\\\\n\\\\nAll full-time employees receive the following standard equipment upon joining:\\\\n\\\\n| Role Category | Laptop | Monitor | Accessories |\\\\n|---|---|---|---|\\\\n| Developer / Engineer | MacBook Pro 14\\\\\\\" (M3) | 27\\\\\\\" external display | Keyboard, mouse, USB-C hub |\\\\n| Analyst / Consultant | MacBook Air 15\\\\\\\" (M2) | 24\\\\\\\" external display | Keyboard, mouse |\\\\n| Operations / Support | Lenovo ThinkPad L14 | 24\\\\\\\" external display | Keyboard, mouse |\\\\n| Management | MacBook Pro 14\\\\\\\" (M3) | 27\\\\\\\" external display | Keyboard, mouse, USB-C hub |\\\\n\\\\nRequests for non-standard equipment (e.g. a second monitor, a specific keyboard, a standing desk converter) must be submitted via the IT portal and approved by the employee's manager. Non-standard equipment requests are assessed on a case-by-case basis and subject to budget availability.\\\\n\\\\n---\\\\n\\\\n## 3.\\\"\\n  }\\n]\", \"name\": \"hr_policy_knowledge_base\", \"tool_call_id\": \"chatcmpl-tool-a345cec1b52da691\"}",
+            "type": "tool_response",
+            "event": "run.step.delta",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 0.869,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": {
+            "reason": "runtime error"
+        }
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "Apex Solutions contributes 50% of the medical aid premiums for registered dependants. Therefore, the answer to whether Apex contributes to medical aid for registered dependants is yes.",
+            "type": "conversational_search",
+            "event": "message.created",
+            "conversational_search_metadata": {
+                "tool_call_id": "chatcmpl-tool-a345cec1b52da691"
+            },
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 1.893,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    }
+]

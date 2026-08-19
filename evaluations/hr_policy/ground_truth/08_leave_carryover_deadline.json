@@ -1,0 +1,23 @@
+{
+  "agent": "hr_onboarding_agent",
+  "goals": {
+    "summarize": []
+  },
+  "goal_details": [
+    {
+      "name": "summarize",
+      "type": "text",
+      "response": "A maximum of 5 unused leave days may be carried over into the following calendar year. Carried-over days must be used by 31 March or they are forfeited. Carrying over more than 5 days requires written approval from the employee's direct manager and the Head of People & Culture.",
+      "keywords": [
+        "maximum of 5",
+        "31 March",
+        "forfeited",
+        "more than 5 days",
+        "direct manager",
+        "Head of People & Culture"
+      ]
+    }
+  ],
+  "story": "An employee asks about the deadline and approval rules for carrying annual leave forward.",
+  "starting_sentence": "Can unused annual leave be carried over, and when must it be used?"
+}

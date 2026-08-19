@@ -1,0 +1,730 @@
+{
+  "branch": "main",
+  "entries": [
+    {
+      "path": ".env.example",
+      "sha256": "166539e246c6bc4da0c39b67df3300a88ebe03add54ab0df028943de085b614e",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "80f5b7b41a91baffed4c0ab50790ea6efb0982a4179ba1722b6ac796763f7bd9",
+      "state": "tracked"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cb11cf7e80c319949fb913f6dc2a5a4e304e36ec02ac08fa6f18e346157cc8b1",
+      "state": "tracked"
+    },
+    {
+      "path": "README.md",
+      "sha256": "717f037e953714fd89721d2450ad77137a237b73ea555817da311550e464ef52",
+      "state": "tracked"
+    },
+    {
+      "path": "agents/hr_onboarding_agent.yaml",
+      "sha256": "65f91b45b99282522dcf149850fd2770fa9804d346928c4c73faecd1ce52dd3f",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/01_leave_annual_entitlement.metadata.json",
+      "sha256": "42c07b5dd14f8d3411e514420b2c1b37f6a1e18bee1ab1bb67198b41a5abe797",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/02_leave_encashment_limit.metadata.json",
+      "sha256": "d33e9559aee46767fa5c1c097fd7542bd5a5ef4ecb3b1be0512db76ab99196e9",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/03_benefits_medical_aid_dependants.metadata.json",
+      "sha256": "e0c467cfca5e4effb67eec05998b5fe9a349d4135b41e3f59ee1a840db0b97f6",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/04_benefits_employee_study_assistance.metadata.json",
+      "sha256": "e7a64fd61bf2548835e193dcaf949fe46790599c5c7300e700245b787ead7514",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/05_code_conduct_reporting_concerns.metadata.json",
+      "sha256": "ae60faf42b7991c6f074edbd334a9f18e9d2b6e663a76b55e6b956160912c3c4",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/06_it_security_incident_handling.metadata.json",
+      "sha256": "95a3557aa70ea2c8ee240788059d767fdd94f3cb5fb5f14db374c73acbcfb100",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/07_orientation_first_day_schedule.metadata.json",
+      "sha256": "d477f366e1c731067fe21e0e51df68c8c2fb2702990094cbc34632dd124bd526",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/08_leave_carryover_deadline.metadata.json",
+      "sha256": "48784a0a19d6992433548d116202442082d0daa179fa9fd3a3f2d2a0655e0204",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/09_unanswerable_pet_insurance.metadata.json",
+      "sha256": "5985d61d6f1cbd9013a6de986992f6253cad9fef4320bd571a5e6f54d114e7d9",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/10_unanswerable_dependent_tuition.metadata.json",
+      "sha256": "916dda4337d1ef96327a4ba9258471bcf22be0d1445fa37082236e30be52109a",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/EVALUATION_EVIDENCE.md",
+      "sha256": "86ff42a46981c355ebd97f5d49a019721d28237bdafc5fe01f39c92bce402839",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/average_metrics.json",
+      "sha256": "fb685fde525253bb46b6fa37074972866f8828d37a3399fd8ede4cbdc1570be2",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/config.sanitized.yml",
+      "sha256": "6e7a5ba8bedcf86fb485e35dae4ccf9212411d7ee0b5b550840fc9e60308d6c2",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/01_leave_annual_entitlement.messages.analyze.json",
+      "sha256": "fab4ccda3c66ab33d5a7791efb2b44dbd7eb937ad11079177239c2df66531b45",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/01_leave_annual_entitlement.messages.json",
+      "sha256": "42f3f0132f9245e961d7adee4b234ee4b799ae81e5a152ea3a9f6e074380feab",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/01_leave_annual_entitlement.metrics.json",
+      "sha256": "d9defca43ce34caba52e7d256ea028dd8d685b9ab9a46d6d94c7da14f89ad4f1",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/02_leave_encashment_limit.messages.analyze.json",
+      "sha256": "43de7d0c04fe7989b01069b286fe9c722878e976df0c2e0200b26af48901be32",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/02_leave_encashment_limit.messages.json",
+      "sha256": "cb56393614424156d144189b890146922af2db8b2f46a3c734cb7f1cb3d09912",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/02_leave_encashment_limit.metrics.json",
+      "sha256": "86f0a606343f4704e96d17efdac64df85c2994a5c34378f3d0a7948539147a2c",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/03_benefits_medical_aid_dependants.messages.analyze.json",
+      "sha256": "bfc3edee632483c73b92f3070e6840ebc7924ddf1ac065dc1451c16c2555c743",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/03_benefits_medical_aid_dependants.messages.json",
+      "sha256": "9dd8ce32bf6663442b02896cc0b13669928cadd24e3c7b23fc524f6b95381f4a",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/03_benefits_medical_aid_dependants.metrics.json",
+      "sha256": "c7abd8d5a0b542fbdd7183ba484f175d480a8f1e01a038a26b6c45aa88e7ad49",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/04_benefits_employee_study_assistance.messages.analyze.json",
+      "sha256": "30b6d7719c651d90c4d1686e2a25b8ad6e9835bb9470479994fd4b6de43befc7",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/04_benefits_employee_study_assistance.messages.json",
+      "sha256": "bff23964a7dda3a2dfedae1de1c01ac668e9d7ce8565bf8922aa36dc10ba1937",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/04_benefits_employee_study_assistance.metrics.json",
+      "sha256": "0950434ac0dd76274a420b181334a1fa8900a7c8b726805c4ad6e7b51fd2b9ac",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/05_code_conduct_reporting_concerns.messages.analyze.json",
+      "sha256": "7ac5d7c3373990722df9cd72f8a669f1b64e8b20e2da87c83c0702d480cc62e2",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/05_code_conduct_reporting_concerns.messages.json",
+      "sha256": "cdafac9721a683b9407747db63d02a3c75c87c6e7a5d47cc45d4e59730cef5ad",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/05_code_conduct_reporting_concerns.metrics.json",
+      "sha256": "262a30ccb6111d42cbf1f8fe35e5605e5ca6785cb211beffde1bca8582b8acda",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/06_it_security_incident_handling.messages.analyze.json",
+      "sha256": "12db2110a9977b6ef1bb2af85f556b1ec7ff238311e58274787be1f47f4da960",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/06_it_security_incident_handling.messages.json",
+      "sha256": "c961762ff8acc919001f466b536e80438361d22b073bd7bbb70ad82f2f291f98",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/06_it_security_incident_handling.metrics.json",
+      "sha256": "a13cd7a8a720be6a58b1fb163fb231c5c2baf4ac3334f5bb73547165f4d9bf55",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/07_orientation_first_day_schedule.messages.analyze.json",
+      "sha256": "7f7485c8e42829bbc2c09d6672d8eac887cf51636994c3c347e8a1cba40acc1c",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/07_orientation_first_day_schedule.messages.json",
+      "sha256": "3d471e9085201e99bf1ed97dcf094441aa4a3d9920752dae6ccdc2ab79d92716",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/07_orientation_first_day_schedule.metrics.json",
+      "sha256": "897f556d22e98826caabc12850b2d068aaec9c898a603f43838a1ed42a3a0389",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/08_leave_carryover_deadline.messages.analyze.json",
+      "sha256": "e0f2d95ebed7cd5bbd55eb076fe7686277b951a76f9f021d3a396a77ba52a502",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/08_leave_carryover_deadline.messages.json",
+      "sha256": "36ea4356bbd6ec95a3908cc5e796d4c0b61c0e0f2ba49747153f1e850d70a96c",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/08_leave_carryover_deadline.metrics.json",
+      "sha256": "6c10ec8fa2b194f97a00ab15d653825fe3178183554c08908de5b49683dbff92",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/09_unanswerable_pet_insurance.messages.analyze.json",
+      "sha256": "cfe2366079f7d66b9c6268b9439fb46929aabbb5869b5191e54814fd6fd1672f",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/09_unanswerable_pet_insurance.messages.json",
+      "sha256": "04c1feaa8dd3ccadca7146c42b04d90dca880c0613563fb39648bc2f4be80206",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/09_unanswerable_pet_insurance.metrics.json",
+      "sha256": "34a776df392a5de4cd5d86121e87459d4e6f3fecdf3562732fc0328a8b2075dc",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/10_unanswerable_dependent_tuition.messages.analyze.json",
+      "sha256": "940e4e9b41b441f23de2370efe692ba7b205017c11d2c1e39c73b9ed4c61a504",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/10_unanswerable_dependent_tuition.messages.json",
+      "sha256": "6c3cd66b3011cb03875fbab88e3fff2402d7648aa4381fd80d18b18f06cf3cc7",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/10_unanswerable_dependent_tuition.metrics.json",
+      "sha256": "9a43ec22a551d14423daced9aec0e96ac0f0605780cb069ff3931536b6331951",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/hr_policy/2026-08-13_03-10-16/summary_metrics.csv",
+      "sha256": "54a0d0ddc1f21afdb1b47747faa619186b105421e1c2e0b1bf6129f1a7dd8e35",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/support_triage/dev_initial/20260818T000438.946705Z/development_results.json",
+      "sha256": "1329550aa43a85a6f1e1a1bc0db8ee34585c4b9d2d9ac068fd7da535af327c0f",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/support_triage/dev_initial/20260818T002957.432847Z/development_results.json",
+      "sha256": "9476cb261888adb4abdb2fdb65d52daf7960377ee4efac0913c4388c9ce1c295",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/support_triage/full30_frozen_combined.json",
+      "sha256": "0b7d862555c288473a3d1fb8ef6c10fc3f5c27b8bf831ca344f6789de431a1b1",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/evaluations/support_triage/held_out_final/20260818T031003.013996Z/heldout_results.json",
+      "sha256": "91e767b936272cd3363f46006b5f24f9862e4ae9131ce5717bdda9180a924584",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/milestone_5_classifier_evidence.md",
+      "sha256": "c3768064a68a06cdabe99dd8e52d32567fb05fd4e8c26a812da3fe57d61d8e93",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/milestone_5_classifier_dataset_freeze_evidence.md",
+      "sha256": "1996b6252770ab6938595166ed65677796fa720ea274b106e8b7828b56b36346",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/milestone_6_draft_quality_review.md",
+      "sha256": "438c91c91e502fa91703341b704bc9eb7f5be098a6321d9c4c7f6e9be8b6b57d",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/milestone_8_agent_vs_pipeline_reflection.md",
+      "sha256": "2fbfef2c9711fedcb4427f29d74c4bcd9e45da70630340b9ae43645fe57ff204",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/milestone_8_evaluation_evidence.md",
+      "sha256": "04b03c6922c9c0f028a65c8be999f636eab89325417789a484d9490f8044dfee",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/milestone_7_failure_mode_evidence.md",
+      "sha256": "bee0f323fc3181a64bc63661f7deac006b40bd9bfd0891080d8677fa031fc95a",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/model_selection_confirmation.json",
+      "sha256": "f8a9e587f1abcd847e82680ab159154e69ec168bfe1a6040e412f7799438b011",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/model_selection_smoke.json",
+      "sha256": "730b4f32a2d83488db6d1af754c7794ae6ac5b846c8213425ffc5b085f9cdc6e",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/milestone_4_part_a_end_to_end_evidence.md",
+      "sha256": "eb1b174332331ada7c56421a41f9c0a172d2c2a10a42be2d15e59a0369ba7acd",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/platform_validation_evidence.md",
+      "sha256": "b9e593ec81ff759046aa1dfac163ac99f5f9f6d9e80a26a77d4d401171e89391",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "data/support_tickets_freeze_manifest.json",
+      "sha256": "1a20378b33cf375d70994bfcade578c11296d4a89bcba9260ab779b0cb1d1e28",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "data/support_tickets_ground_truth.json",
+      "sha256": "ef1a83c4a379065917bd4220f4db8eaed6ea3ada2715a4c31a6b1948d2075f81",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "data/support_tickets_seed.json",
+      "sha256": "40901dbbc12ec559ca1b5fc257adb8b1a3406eac08caca66da970e323ff5d7b3",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "data/support_tickets_split.json",
+      "sha256": "c56860c4cdf337a9c7c1fa7b465fc2a2bde0703871ed2d3627987c822a798be2",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/development_history/PROJECT_EVIDENCE_LEDGER.md",
+      "sha256": "9b310fc2ea8a3e2407399e546a985b7c29d3b5b38bf3f42a174b58b3835ef3be",
+      "state": "tracked"
+    },
+    {
+      "path": "docs/AGENT_DECISION_FLOW.md",
+      "sha256": "86d519c117ec8aeb5ad5ca18ae03786656bc99fd34a8e29492b9b52dc31340b2",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "artifacts/development_history/PROJECT_SPEC_HISTORY.md",
+      "sha256": "387e6de11a055fda2646995a5bfc820b46e93b9c59df65059382d5e5f428c784",
+      "state": "tracked"
+    },
+    {
+      "path": "evaluations/hr_policy/config.yaml",
+      "sha256": "c74ca3f974fcb7f1ab96fee84b7f1cd037ffbdfa3d9fa8831e952197b16cf2d6",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/ground_truth/01_leave_annual_entitlement.json",
+      "sha256": "14e735f97808f0f09e03640c1309a26097e0776105728db6a699ee86b3721723",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/ground_truth/02_leave_encashment_limit.json",
+      "sha256": "607a48ea0076ff442e34ce86ee15363bcbaa6cc48abdfbac9ae8564c26a4e1c0",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/ground_truth/03_benefits_medical_aid_dependants.json",
+      "sha256": "fc835734dcf4b5ae7f9a730ff95ff37b0c0055dcdd284a10cba1fc0443a09d40",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/ground_truth/04_benefits_employee_study_assistance.json",
+      "sha256": "5d30d75060aeaf38cf002daa6450febbed2b6a9e1fb82f3e87aa516e2d4f2a04",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/ground_truth/05_code_conduct_reporting_concerns.json",
+      "sha256": "8b886a603fefaf0dc2f8fe1f68b981f628865314f62473fcd18037f2427ad0cd",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/ground_truth/06_it_security_incident_handling.json",
+      "sha256": "1f9cdd7d9be0eaf21a16ce2de70229e51fa4aecaa20b77db2e01eb57c4862d85",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/ground_truth/07_orientation_first_day_schedule.json",
+      "sha256": "052ffefd9c0d36faa92bbd4f994729d7bfb0f125d65049240c03ac6d64a82b66",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/ground_truth/08_leave_carryover_deadline.json",
+      "sha256": "0492481db7d5afb7e560a68e81dda0ebca658ef29a741534f472ce238383a2dd",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/ground_truth/09_unanswerable_pet_insurance.json",
+      "sha256": "4063315e71698b397f2e840229cb8f392682c56f4ba9b65fa1bf79f2b1034c68",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/ground_truth/10_unanswerable_dependent_tuition.json",
+      "sha256": "0069175689f42d62ba1aa9e7da80fae30f7dced7aed3a8eb35e1353046a67200",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "evaluations/hr_policy/quality_bar.yaml",
+      "sha256": "cf33c40b9f1c2630b9acf01dd3cbe5ffef498746505d9c84ff2919bca713edde",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "flows/it_request_flow.py",
+      "sha256": "b016fa266a5934e5912f76c8cd10ad25506360e48b6e2347fd77560de0231b5f",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "flows/orientation_booking_flow.py",
+      "sha256": "527009dfc0f9b86161f22fa1b8f622afbd35e78a83c418d9ce6cbd55712b5144",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "flows/support_triage_flow.py",
+      "sha256": "e00236855aade270f0229a53361d7e0479a2e9d196930afe25014a3bb8f506fd",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "knowledge/hr_policy_knowledge_base.yaml",
+      "sha256": "cbc2e39455c210cb47625cafb53289aface80cf2c8db62e7859bbd0d5fe2bd74",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "knowledge/sources/benefits-and-compensation.txt",
+      "sha256": "28839fe4a008d6a0ff688c004eebe61ce34a72b4750a54a0fa4a71032d50d32b",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "knowledge/sources/code-of-conduct.txt",
+      "sha256": "36a4bce177cf0ecb8c8ad6597ecdd5cc6bba56457d099a1a64fa0807f4d32717",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "knowledge/sources/it-access-policy.txt",
+      "sha256": "5561412e0442af1ca8927faa3a574185379d3d81b58fc1c352505c537dc8c501",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "knowledge/sources/leave-policy.txt",
+      "sha256": "58010048238908492092f61022b97d1bf357be6432f34e818174808187d29731",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "knowledge/sources/new-hire-orientation-guide.txt",
+      "sha256": "8cf1ff7e0ff58b199bcebc963a9f53412e38ffa75d1678000e09611987cacab5",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "mock_docs/benefits-and-compensation.md",
+      "sha256": "28839fe4a008d6a0ff688c004eebe61ce34a72b4750a54a0fa4a71032d50d32b",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "mock_docs/code-of-conduct.md",
+      "sha256": "36a4bce177cf0ecb8c8ad6597ecdd5cc6bba56457d099a1a64fa0807f4d32717",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "mock_docs/it-access-policy.md",
+      "sha256": "5561412e0442af1ca8927faa3a574185379d3d81b58fc1c352505c537dc8c501",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "mock_docs/leave-policy.md",
+      "sha256": "58010048238908492092f61022b97d1bf357be6432f34e818174808187d29731",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "mock_docs/new-hire-orientation-guide.md",
+      "sha256": "8cf1ff7e0ff58b199bcebc963a9f53412e38ffa75d1678000e09611987cacab5",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "f8e901a1498b9720dbef133c32b105d481f5c85dc6c6f144a6ed9644056f25f1",
+      "state": "tracked"
+    },
+    {
+      "path": "scripts/build_support_triage_evaluation_report.py",
+      "sha256": "ec9236c28bc7d26822a6fb0264cab835af4468089204719d0371b18aedbcd774",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "scripts/run_support_triage_dev_eval.py",
+      "sha256": "f26685ce1f6eca3efc8cfcb7b8d0a58dc6b7f68f0857a63329c0368f727c7dd1",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "scripts/run_support_triage_draft_review.py",
+      "sha256": "1f77ad4c9d26292ebe33f87fc290bdf1a9467a977ef18fca61a7a5f8753c9498",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "scripts/run_support_triage_heldout_eval.py",
+      "sha256": "226159dde39df95668f9ad6503271ebac219da1588a23c5ab15889d2b1fea679",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "scripts/start_dev.ps1",
+      "sha256": "6d2c9ab60b5f6a2d7e4ca7de945e7178b5651a5066de01cced37849974b59d92",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tests/test_environment.py",
+      "sha256": "b54a1f197913234b7d39c97b82c35838395f5c08451524cb065d30814a7115ff",
+      "state": "tracked"
+    },
+    {
+      "path": "tests/test_hr_onboarding_agent_contract.py",
+      "sha256": "e15c1173aa067b8b7b7510083c3b330226bb9bc160ffd66c1d58585c7404d3fb",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tests/test_it_request_flow_contract.py",
+      "sha256": "1cd05567e9f7d8b988d8bb7efa6f9c0170d16c40a2e5ccb2f3583a1778d6e0ab",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tests/test_onboarding_persistence.py",
+      "sha256": "ac05ee62fa1bb5b94c51f79efcac74623e7438980856e9b0312e80e2ee4f18d4",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tests/test_orientation_booking_flow_contract.py",
+      "sha256": "d70ac05cb89ce58140c5682a41bf99afa28ff6eef6965f356a12c423efacdc3a",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tests/test_support_triage_classifier_contract.py",
+      "sha256": "7a1642c2d09e37002388ea4265335f0ea1b17336cb8a9bbc2005005de21c65b0",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tests/test_support_triage_dataset_contract.py",
+      "sha256": "569119f29eff51301cfc526a8c807a66661f7761202e14844e4a4d3bb3412a04",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tests/test_support_triage_drafter_contract.py",
+      "sha256": "b04e96ba746c4f373e5e34451707bf52db64c70cbc82ba98373c4e298b1e0aaa",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tests/test_support_triage_finalization_contract.py",
+      "sha256": "362983d3aebece9a6d67da4f31a38402bb3327bce6919514822b191ffe018a04",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tests/test_support_triage_flow_contract.py",
+      "sha256": "4d9d132255f1fe78e24cc599d18ac4df796ef51bbeb64bcf0e551d28933ca08a",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tests/test_support_triage_evaluation_report.py",
+      "sha256": "c05c3bcfe19ebd7256afa180b9f007c5899056a10fca9f0c30685af829506799",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tools/onboarding_persistence.py",
+      "sha256": "2f44a0236a747a1c9e304689c5882fb9a03ab156a83bb71e63b8692616f48568",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tools/onboarding_persistence_requirements.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tools/support_triage_classifier.py",
+      "sha256": "108584b93fe78e5b5efc192f9a53d3f70ae3f65e88ac3248b2ffcd767481ab45",
+      "state": "untracked_non_ignored"
+    },
+    {
+      "path": "tools/support_triage_drafter.py",
+      "sha256": "92dc5790a5c1025bc7fe0d2aa8a4faea4e81649d257a21c7403ba6d962233a60",
+      "state": "untracked_non_ignored"
+    }
+  ],
+  "explicit_exclusions": [
+    "artifacts/code_freeze_manifest.json",
+    ".git/",
+    ".venv/",
+    "__pycache__/",
+    ".pytest_cache/",
+    "ignored files from git exclude rules including local secret env files such as .env"
+  ],
+  "file_count": 117,
+  "freeze_fingerprint_sha256": "75edf06d3d4b4b82ce896b9de6e2e2128cfa7f3e813d8ae29805f36108c8e130",
+  "freeze_timestamp": "2026-08-18T21:06:56.3552272+03:00",
+  "git_status_snapshot": [
+    " M AGENTS.md",
+    " M README.md",
+    " M artifacts/development_history/PROJECT_EVIDENCE_LEDGER.md",
+    " M artifacts/development_history/PROJECT_SPEC_HISTORY.md",
+    "?? .env.example",
+    "?? agents/hr_onboarding_agent.yaml",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/01_leave_annual_entitlement.metadata.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/02_leave_encashment_limit.metadata.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/03_benefits_medical_aid_dependants.metadata.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/04_benefits_employee_study_assistance.metadata.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/05_code_conduct_reporting_concerns.metadata.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/06_it_security_incident_handling.metadata.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/07_orientation_first_day_schedule.metadata.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/08_leave_carryover_deadline.metadata.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/09_unanswerable_pet_insurance.metadata.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/10_unanswerable_dependent_tuition.metadata.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/EVALUATION_EVIDENCE.md",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/average_metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/config.sanitized.yml",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/01_leave_annual_entitlement.messages.analyze.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/01_leave_annual_entitlement.messages.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/01_leave_annual_entitlement.metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/02_leave_encashment_limit.messages.analyze.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/02_leave_encashment_limit.messages.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/02_leave_encashment_limit.metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/03_benefits_medical_aid_dependants.messages.analyze.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/03_benefits_medical_aid_dependants.messages.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/03_benefits_medical_aid_dependants.metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/04_benefits_employee_study_assistance.messages.analyze.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/04_benefits_employee_study_assistance.messages.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/04_benefits_employee_study_assistance.metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/05_code_conduct_reporting_concerns.messages.analyze.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/05_code_conduct_reporting_concerns.messages.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/05_code_conduct_reporting_concerns.metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/06_it_security_incident_handling.messages.analyze.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/06_it_security_incident_handling.messages.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/06_it_security_incident_handling.metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/07_orientation_first_day_schedule.messages.analyze.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/07_orientation_first_day_schedule.messages.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/07_orientation_first_day_schedule.metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/08_leave_carryover_deadline.messages.analyze.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/08_leave_carryover_deadline.messages.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/08_leave_carryover_deadline.metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/09_unanswerable_pet_insurance.messages.analyze.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/09_unanswerable_pet_insurance.messages.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/09_unanswerable_pet_insurance.metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/10_unanswerable_dependent_tuition.messages.analyze.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/10_unanswerable_dependent_tuition.messages.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/messages/10_unanswerable_dependent_tuition.metrics.json",
+    "?? artifacts/evaluations/hr_policy/2026-08-13_03-10-16/summary_metrics.csv",
+    "?? artifacts/evaluations/support_triage/dev_initial/20260818T000438.946705Z/development_results.json",
+    "?? artifacts/evaluations/support_triage/dev_initial/20260818T002957.432847Z/development_results.json",
+    "?? artifacts/evaluations/support_triage/full30_frozen_combined.json",
+    "?? artifacts/evaluations/support_triage/held_out_final/20260818T031003.013996Z/heldout_results.json",
+    "?? artifacts/milestone_5_classifier_evidence.md",
+    "?? artifacts/milestone_5_classifier_dataset_freeze_evidence.md",
+    "?? artifacts/milestone_6_draft_quality_review.md",
+    "?? artifacts/milestone_8_agent_vs_pipeline_reflection.md",
+    "?? artifacts/milestone_8_evaluation_evidence.md",
+    "?? artifacts/milestone_7_failure_mode_evidence.md",
+    "?? artifacts/model_selection_confirmation.json",
+    "?? artifacts/model_selection_smoke.json",
+    "?? artifacts/milestone_4_part_a_end_to_end_evidence.md",
+    "?? artifacts/platform_validation_evidence.md",
+    "?? data/support_tickets_freeze_manifest.json",
+    "?? data/support_tickets_ground_truth.json",
+    "?? data/support_tickets_seed.json",
+    "?? data/support_tickets_split.json",
+    "?? docs/AGENT_DECISION_FLOW.md",
+    "?? evaluations/hr_policy/config.yaml",
+    "?? evaluations/hr_policy/ground_truth/01_leave_annual_entitlement.json",
+    "?? evaluations/hr_policy/ground_truth/02_leave_encashment_limit.json",
+    "?? evaluations/hr_policy/ground_truth/03_benefits_medical_aid_dependants.json",
+    "?? evaluations/hr_policy/ground_truth/04_benefits_employee_study_assistance.json",
+    "?? evaluations/hr_policy/ground_truth/05_code_conduct_reporting_concerns.json",
+    "?? evaluations/hr_policy/ground_truth/06_it_security_incident_handling.json",
+    "?? evaluations/hr_policy/ground_truth/07_orientation_first_day_schedule.json",
+    "?? evaluations/hr_policy/ground_truth/08_leave_carryover_deadline.json",
+    "?? evaluations/hr_policy/ground_truth/09_unanswerable_pet_insurance.json",
+    "?? evaluations/hr_policy/ground_truth/10_unanswerable_dependent_tuition.json",
+    "?? evaluations/hr_policy/quality_bar.yaml",
+    "?? flows/it_request_flow.py",
+    "?? flows/orientation_booking_flow.py",
+    "?? flows/support_triage_flow.py",
+    "?? knowledge/hr_policy_knowledge_base.yaml",
+    "?? knowledge/sources/benefits-and-compensation.txt",
+    "?? knowledge/sources/code-of-conduct.txt",
+    "?? knowledge/sources/it-access-policy.txt",
+    "?? knowledge/sources/leave-policy.txt",
+    "?? knowledge/sources/new-hire-orientation-guide.txt",
+    "?? mock_docs/benefits-and-compensation.md",
+    "?? mock_docs/code-of-conduct.md",
+    "?? mock_docs/it-access-policy.md",
+    "?? mock_docs/leave-policy.md",
+    "?? mock_docs/new-hire-orientation-guide.md",
+    "?? scripts/build_support_triage_evaluation_report.py",
+    "?? scripts/run_support_triage_dev_eval.py",
+    "?? scripts/run_support_triage_draft_review.py",
+    "?? scripts/run_support_triage_heldout_eval.py",
+    "?? scripts/start_dev.ps1",
+    "?? tests/test_hr_onboarding_agent_contract.py",
+    "?? tests/test_it_request_flow_contract.py",
+    "?? tests/test_onboarding_persistence.py",
+    "?? tests/test_orientation_booking_flow_contract.py",
+    "?? tests/test_support_triage_classifier_contract.py",
+    "?? tests/test_support_triage_dataset_contract.py",
+    "?? tests/test_support_triage_drafter_contract.py",
+    "?? tests/test_support_triage_finalization_contract.py",
+    "?? tests/test_support_triage_flow_contract.py",
+    "?? tests/test_support_triage_evaluation_report.py",
+    "?? tools/onboarding_persistence.py",
+    "?? tools/onboarding_persistence_requirements.txt",
+    "?? tools/support_triage_classifier.py",
+    "?? tools/support_triage_drafter.py"
+  ],
+  "git_status_snapshot_stage": "after approved G4-to-G5 execution-plan transition and before manifest creation",
+  "head_commit_sha": "09961318929963d23f4930cbda48a7d6dbc5588a",
+  "manifest_version": "code-freeze-working-tree-v1",
+  "snapshot_algorithm": {
+    "aggregate_hash": "SHA-256 of aggregate_input",
+    "aggregate_input": "<file_sha256><two spaces><normalized_path>\\n for each sorted entry, UTF-8 encoded with LF line endings",
+    "control_ledger_circularity": "artifacts/development_history/PROJECT_EVIDENCE_LEDGER.md is included in the snapshot; the literal freeze fingerprint is stored only in this manifest to avoid circular invalidation",
+    "entry_hash": "SHA-256 of raw file bytes",
+    "entry_scope": "tracked files existing in the working tree plus untracked non-ignored files",
+    "entry_sort": "lexicographic by normalized repository-relative path",
+    "path_normalization": "repository-relative paths use / separators"
+  },
+  "supervisor_approval_date": "2026-08-18"
+}

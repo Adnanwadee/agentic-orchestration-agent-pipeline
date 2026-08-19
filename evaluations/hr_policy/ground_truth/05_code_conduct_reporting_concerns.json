@@ -1,0 +1,23 @@
+{
+  "agent": "hr_onboarding_agent",
+  "goals": {
+    "summarize": []
+  },
+  "goal_details": [
+    {
+      "name": "summarize",
+      "type": "text",
+      "response": "Employees may report conduct concerns to their direct manager if the concern does not involve the manager, to People & Culture, or through the anonymous reporting line. Reports are treated confidentially where possible, and retaliation for a good-faith report is itself a policy violation.",
+      "keywords": [
+        "direct manager",
+        "People & Culture",
+        "anonymous reporting line",
+        "confidentially",
+        "retaliation",
+        "good-faith report"
+      ]
+    }
+  ],
+  "story": "An employee asks how to report misconduct and whether retaliation is allowed.",
+  "starting_sentence": "How can employees report conduct concerns, and is retaliation allowed?"
+}

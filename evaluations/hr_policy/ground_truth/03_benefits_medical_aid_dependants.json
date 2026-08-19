@@ -1,0 +1,21 @@
+{
+  "agent": "hr_onboarding_agent",
+  "goals": {
+    "summarize": []
+  },
+  "goal_details": [
+    {
+      "name": "summarize",
+      "type": "text",
+      "response": "Apex Solutions contributes to medical aid for all permanent employees and covers 50% of premiums for registered dependants. The employee's own medical aid premium is covered at 60%.",
+      "keywords": [
+        "permanent employees",
+        "50% of premiums",
+        "registered dependants",
+        "60%"
+      ]
+    }
+  ],
+  "story": "A permanent employee asks about medical aid coverage for dependants.",
+  "starting_sentence": "Does Apex contribute to medical aid for registered dependants?"
+}

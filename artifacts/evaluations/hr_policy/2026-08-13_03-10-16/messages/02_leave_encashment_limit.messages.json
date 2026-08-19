@@ -1,0 +1,153 @@
+[
+    {
+        "role": "user",
+        "content": "Can I cash out my annual leave while I am still employed?",
+        "type": "text",
+        "event": null,
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": null,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "{\"type\": \"tool_call\", \"name\": \"hr_policy_knowledge_base\", \"args\": {\"query\": \"cash out annual leave while employed\"}, \"id\": \"chatcmpl-tool-8e9506224d46e774\"}",
+        "type": "tool_call",
+        "event": "run.step.delta",
+        "conversational_search_metadata": null,
+        "tool_calls": [
+            {
+                "id": "chatcmpl-tool-8e9506224d46e774",
+                "function": {
+                    "name": "hr_policy_knowledge_base",
+                    "arguments": "{\"query\": \"cash out annual leave while employed\"}"
+                },
+                "type": "function"
+            }
+        ],
+        "tool_call_id": "chatcmpl-tool-8e9506224d46e774",
+        "response_time": 7.845,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "{\"type\": \"tool_response\", \"content\": \"[\\n  {\\n    \\\"title\\\": \\\"leave-policy.txt\\\",\\n    \\\"body\\\": \\\"For absences of 3 or more consecutive days, a medical certificate from a registered practitioner must be submitted to HR within 5 working days of returning to work.\\\\n\\\\nSick leave may not be used to extend annual leave. If an employee falls ill during a period of approved annual leave and can provide a medical certificate, the days may be converted to sick leave at HR's discretion.\\\\n\\\\n---\\\\n\\\\n## 3. Family Responsibility Leave\\\\n\\\\nEmployees are entitled to 3 days of paid family responsibility leave per calendar year for the following events:\\\\n- Death of an immediate family member (spouse, child, parent, sibling)\\\\n- Serious illness of a dependent child requiring the employee's presence\\\\n- Birth of the employee's child (in addition to any parental leave entitlement)\\\\n\\\\nFamily responsibility leave does not accrue and cannot be carried over. Supporting documentation (e.g. death certificate, medical letter) must be submitted to HR within 10 working days.\\\\n\\\\n---\\\\n\\\\n## 4. Parental Leave\\\\n\\\\n**Primary caregiver leave:** Employees who are the primary caregiver for a newborn or newly adopted child are entitled to 16 weeks of paid parental leave. This applies regardless of gender.\\\\n\\\\n**Secondary caregiver leave:** Employees who are not the primary caregiver are entitled to 4 weeks of paid parental leave.\\\\n\\\\nParental leave may commence up to 2 weeks before the expected birth date. Employees must notify HR in writing at least 8 weeks before the intended start of parental leave. Failure to provide notice may result in the start date being deferred.\\\\n\\\\nParental leave runs concurrently with any statutory entitlements.\\\\n\\\\n---\\\\n\\\\n## 5.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"leave-policy.txt\\\",\\n    \\\"body\\\": \\\"# Leave and Time Off Policy\\\\n**Apex Solutions \\\\u2014 People & Culture**  \\\\n**Version 3.1 | Effective January 2025**\\\\n\\\\n---\\\\n\\\\n## 1. Annual Leave\\\\n\\\\nAll full-time employees are entitled to 21 working days of paid annual leave per calendar year. Part-time employees receive leave on a pro-rata basis calculated against a standard 40-hour week.\\\\n\\\\nLeave accrues from the employee's start date at a rate of 1.75 days per month. Employees may not take annual leave during their first 30 days of employment.\\\\n\\\\n**Carrying over leave:** A maximum of 5 unused leave days may be carried over into the following calendar year. Carried-over days must be used by 31 March or they are forfeited. Requests to carry over more than 5 days require written approval from the employee's direct manager and the Head of People & Culture.\\\\n\\\\n**Leave encashment:** Annual leave may not be encashed except upon resignation or termination, in which case unused accrued leave will be paid out at the employee's daily rate.\\\\n\\\\n---\\\\n\\\\n## 2. Sick Leave\\\\n\\\\nEmployees are entitled to 10 days of paid sick leave per calendar year. Sick leave does not accrue and resets on 1 January each year.\\\\n\\\\nFor absences of 1\\\\u20132 consecutive days, self-certification is accepted. For absences of 3 or more consecutive days, a medical certificate from a registered practitioner must be submitted to HR within 5 working days of returning to work.\\\\n\\\\nSick leave may not be used to extend annual leave.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"leave-policy.txt\\\",\\n    \\\"body\\\": \\\"Employees must notify HR in writing at least 8 weeks before the intended start of parental leave. Failure to provide notice may result in the start date being deferred.\\\\n\\\\nParental leave runs concurrently with any statutory entitlements.\\\\n\\\\n---\\\\n\\\\n## 5. Study Leave\\\\n\\\\nEmployees pursuing qualifications relevant to their role may apply for up to 5 days of paid study leave per academic year for examination preparation and sitting. Applications must be submitted to the employee's manager at least 4 weeks in advance and are subject to operational requirements.\\\\n\\\\nStudy leave is not guaranteed and is approved at management discretion. It may not be used for coursework, lectures, or online learning \\\\u2014 only for examinations.\\\\n\\\\n---\\\\n\\\\n## 6. Unpaid Leave\\\\n\\\\nEmployees may apply for unpaid leave for personal reasons not covered by other leave categories. Unpaid leave requires approval from both the direct manager and the Head of People & Culture. It is not guaranteed and will be assessed against business needs.\\\\n\\\\nUnpaid leave exceeding 20 consecutive working days will affect annual leave accrual for the period of absence.\\\\n\\\\n---\\\\n\\\\n## 7. Leave Application Process\\\\n\\\\nAll leave requests must be submitted through the HR portal at least 5 working days in advance (except sick leave and emergency family responsibility leave). Retroactive leave requests are not accepted except in genuine emergencies and require Head of People & Culture approval.\\\\n\\\\nManagers are expected to respond to leave requests within 3 working days. If a request is declined, the manager must provide a written reason.\\\\n\\\\n---\\\\n\\\\n## 8. Public Holidays\\\\n\\\\nEmployees are entitled to all gazetted public holidays.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"leave-policy.txt\\\",\\n    \\\"body\\\": \\\"If a request is declined, the manager must provide a written reason.\\\\n\\\\n---\\\\n\\\\n## 8. Public Holidays\\\\n\\\\nEmployees are entitled to all gazetted public holidays. Where operational requirements necessitate working on a public holiday, the employee will receive either a day off in lieu (to be taken within 30 days) or a 1.5\\\\u00d7 pay supplement, at the employee's election.\\\\n\\\\n---\\\\n\\\\n*For questions about this policy, contact the People & Culture team at hr@apexsolutions.internal*\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"benefits-and-compensation.txt\\\",\\n    \\\"body\\\": \\\"These days may not be carried over and are separate from the standard sick leave entitlement.\\\\n\\\\n---\\\\n\\\\n## 7. Flexible Work Arrangements\\\\n\\\\n### 7.1 Hybrid Work\\\\nEmployees are expected to work from the office at least 3 days per week unless their role is designated as fully remote. Office days are coordinated at team level \\\\u2014 managers communicate expected in-office days to their teams.\\\\n\\\\n### 7.2 Flexible Hours\\\\nCore hours are 09:00\\\\u201315:00 on working days. Outside of core hours, employees have flexibility to structure their day to suit personal needs, subject to meeting their responsibilities and being available for scheduled meetings.\\\\n\\\\n### 7.3 Work From Abroad\\\\nEmployees may request to work from outside the country for up to 4 weeks per calendar year. Requests require manager approval and HR review (tax and visa implications must be assessed for each country). Work from abroad does not change the employee's employment terms or compensation.\\\\n\\\\n---\\\\n\\\\n## 8. Onboarding Benefits\\\\n\\\\nNew employees receive the following during their first month:\\\\n\\\\n- **Welcome kit:** company-branded notebook, pen set, and laptop bag delivered on day one\\\\n- **Buddy programme:** each new employee is paired with a buddy from their team for their first 90 days\\\\n- **Onboarding stipend:** R1,500 once-off payment in the first payroll to cover home office setup costs (remote/hybrid employees only)\\\\n\\\\n---\\\\n\\\\n*For benefits queries, contact People & Culture at hr@apexsolutions.internal or visit the benefits section of the HR portal.*\\\"\\n  }\\n]\", \"name\": \"hr_policy_knowledge_base\", \"tool_call_id\": \"chatcmpl-tool-8e9506224d46e774\"}",
+        "type": "tool_response",
+        "event": "run.step.delta",
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 1.277,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "There is not enough approved policy information to confirm that you can cash out your annual leave while still employed. However, according to the Leave and Time Off Policy, annual leave may not be encashed except upon resignation or termination, in which case unused accrued leave will be paid out at the employee's daily rate.",
+        "type": "conversational_search",
+        "event": "message.created",
+        "conversational_search_metadata": {
+            "tool_call_id": "chatcmpl-tool-8e9506224d46e774"
+        },
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 3.052,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "user",
+        "content": "Thanks for the clarification. So, unless I’m resigning or being terminated, I can’t cash out my unused annual leave, correct?",
+        "type": "text",
+        "event": null,
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": null,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "That is correct. According to the Leave and Time Off Policy, annual leave may not be encashed except upon resignation or termination.",
+        "type": "text",
+        "event": "message.created",
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 6.597,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "user",
+        "content": "Yes, that’s right—thanks for confirming.",
+        "type": "text",
+        "event": null,
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": null,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "You're welcome. If you have any more questions or need further clarification on HR policies or other onboarding-related topics, feel free to ask.",
+        "type": "text",
+        "event": "message.created",
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 7.354,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "user",
+        "content": "Thanks, I’ll let you know if anything else comes up.",
+        "type": "text",
+        "event": null,
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": null,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "You're welcome. Have a great day and a smooth onboarding process.",
+        "type": "text",
+        "event": "message.created",
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 6.759,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    }
+]

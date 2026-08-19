@@ -1,0 +1,22 @@
+{
+  "agent": "hr_onboarding_agent",
+  "goals": {
+    "summarize": []
+  },
+  "goal_details": [
+    {
+      "name": "summarize",
+      "type": "text",
+      "response": "Employees pursuing a formal degree or diploma relevant to their role may apply for study assistance covering up to 50% of tuition fees, capped at R30,000 per academic year. It requires a 12-month retention agreement, with pro-rated repayment if the employee resigns within 12 months.",
+      "keywords": [
+        "Employees pursuing a formal degree or diploma",
+        "50% of tuition fees",
+        "R30,000 per academic year",
+        "12-month retention agreement",
+        "pro-rated repayment"
+      ]
+    }
+  ],
+  "story": "An employee asks what tuition support is available for their own formal studies.",
+  "starting_sentence": "What study assistance is available for employees doing a formal degree or diploma?"
+}

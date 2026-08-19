@@ -1,7 +1,7 @@
 # Project Specification
 
-Status: G0 control-plane specification
-Selected model: `PENDING_G1`
+Status: G1 platform decisions frozen; G2 approved; G3 approved; G4 approved/closed; Code Freeze active; G5 active
+Selected model: `meta-llama/llama-4-maverick-17b-128e-instruct-fp8`
 
 This document is the technical source of truth for the supervised Agentic Orchestration —
 Agent + Pipeline project. It separates supervisor requirements from approved engineering
@@ -18,9 +18,32 @@ Orchestrate:
 - Part B is a support-triage Flow that uses an LLM only for bounded classification and
   response drafting, while deterministic policy controls review and routing.
 
-Development proceeds through the six gates in `docs/EXECUTION_PLAN.md`. Evidence progresses
+Development proceeds through the six gates in `artifacts/development_history/PROJECT_EVIDENCE_LEDGER.md`. Evidence progresses
 from implementation to local validation, required remote/platform validation, observed
 business outcome, and supervisor approval. A file or implementation alone is not completion.
+
+## G1 Frozen Platform Decisions
+
+G1 closed on 2026-08-12 after platform evidence froze these decisions:
+
+| Area | Frozen decision |
+|---|---|
+| Production HR Agent style | ReAct Core / `react_intrinsic` |
+| Selected LLM | `meta-llama/llama-4-maverick-17b-128e-instruct-fp8` |
+| Orchestrate LLM reference | `watsonx/meta-llama/llama-4-maverick-17b-128e-instruct-fp8` |
+| Part B orchestration | watsonx Orchestrate Flow remains the sole orchestrator |
+| Part B LLM execution mode | `PIPELINE_LLM_MODE = PYTHON_WATSONX_TOOL` |
+| Confirmation/state strategy | native field-based multi-turn User Activity |
+| Knowledge strategy | native Orchestrate Knowledge Base |
+| Knowledge ingestion | authoritative Markdown plus byte-identical `.txt` ingestion representations |
+| Persistence backend | IBM Cloud Object Storage |
+| Persistence format | bounded JSON objects |
+| Remote credential mechanism | Orchestrate `API_KEY_AUTH` connection `cos_onboarding` |
+| Persistence transport | IBM IAM token exchange plus COS REST API plus Python stdlib HTTP |
+| Persistence dependency | no third-party COS SDK or HTTP dependency |
+| Remote Python runtime assumption | Python 3.12 with read-only filesystem |
+| Custom RAG | not active |
+| Cloudant | historical initial candidate only; not the frozen backend |
 
 # A. Original project requirements
 
@@ -115,21 +138,51 @@ fallback or a supervisor approves a change.
 
 ## B1. Part A architecture
 
-The primary architecture is a native watsonx Orchestrate HR Agent in the default Agent style,
-with:
+The primary architecture is a native watsonx Orchestrate HR Agent in the ReAct Core Agent
+style, represented in ADK/YAML as `style: react_intrinsic`, with:
 
 - a native HR Policy Knowledge Base;
-- an IT Request capability/workflow;
-- an Orientation Booking capability/workflow; and
+- a bounded IT Request Flow/tool capability;
+- a bounded Orientation Booking Flow/tool capability; and
 - remote mock persistence behind the two side-effect capabilities.
 
-Default style is selected because the capability set is small and clearly bounded. ReAct is
-understood as an iterative reason/action/observation approach useful for open-ended tool
-selection, but a ReAct runtime is not required merely for appearance and is not selected for
-this bounded Agent.
+The complete HR onboarding experience must remain an agentic system, not one fixed sequential
+onboarding Flow. `hr_onboarding_agent` is the top-level ReAct decision-maker. Based on the
+conversation, it decides whether to answer or retrieve HR policy knowledge, start an IT access
+request, start an orientation booking, ask for clarification, decline an out-of-scope request,
+or finish/exit. Using bounded Flows for IT and booking does not turn Part A into a Pipeline:
+the Agent controls which capability runs and when, while a selected Flow controls how a
+deterministic, side-effect-sensitive capability completes safely.
+
+The Agent was initially prepared with Default style because the capability set is small and
+clearly bounded. G1 tenant import and Agent Builder inspection then showed that Default style is
+deprecated and ReAct Core is the current recommended style. ReAct Core is therefore selected for
+the HR Agent from observed tenant/platform evidence and is consistent with the original task's
+ReAct/agentic-loop learning emphasis; the original task did not mandate a particular runtime
+Agent style. This style migration does not imply any additional Agent capability, tool,
+Knowledge Base, workflow, or persistence behavior. The selected model remains
+`meta-llama/llama-4-maverick-17b-128e-instruct-fp8`.
 
 Native watsonx Orchestrate Knowledge Base is the primary grounding strategy. Custom RAG is
-not a parallel implementation and is available only through the fallback in D1.
+not a parallel implementation and is available only through the fallback in D1. G1B tenant
+evidence proved that the native Knowledge Base can ingest and answer from a byte-identical
+`.txt` representation of the authoritative Markdown source. The engineer-supplied
+`mock_docs/*.md` files remain the authoritative policy sources and must not be rewritten for
+ingestion. Production Knowledge Base preparation in G2 must create byte-identical `.txt`
+representations for the five approved Markdown sources rather than importing `.md` files
+directly.
+
+The production policy-Q&A path is: five authoritative HR Markdown documents, byte-identical
+platform-compatible `.txt` ingestion representations, native watsonx Orchestrate Knowledge
+Base, retrieval-backed policy answers, and `hr_onboarding_agent`. The Knowledge Base must be
+wired to the Agent before Milestone-2 grounded policy-Q&A acceptance testing. Lightweight
+retrieval evidence should be collected where the actual tenant/runtime exposes it, such as
+which Knowledge Base was called, retrieval confidence, response confidence, faithfulness or
+groundedness, and answer relevancy. If a metric is unavailable, it must be recorded as
+unavailable rather than invented; observed grounded answers and abstention remain the core
+required evidence. A numeric retrieval confidence threshold is a stretch goal only, not a
+mandatory Part A acceptance requirement. It must not be enabled or tuned without baseline
+retrieval evidence, tenant support, and a documented benefit.
 
 ## B2. Agent instruction and capability contract
 
@@ -161,6 +214,31 @@ Capability descriptions must not overlap:
 - **Orientation Booking:** Use only when the user wants to schedule or book orientation. Do
   not use it merely for general orientation-information questions.
 
+The IT Request capability is implemented as a bounded deterministic Flow/tool. Its required
+fields are exactly employee name, employee role, and required systems. No company email or other
+additional prerequisite field is required. The IT Flow contract is: request intent, collect and
+retain required fields, ask only for missing required fields, never invent missing values,
+present the completed request, require explicit confirmation, persist nothing on No, produce
+exactly one intended persistence outcome on Yes, and return a structured result to the Agent.
+Critical conversation state must be represented explicitly by Flow/application state rather
+than trusting an LLM to reconstruct important fields from arbitrary conversation history.
+
+The Orientation Booking capability is implemented as a bounded deterministic Flow/tool. Its
+contract is: booking intent, expose and select from stable approved hardcoded slots, retain the
+selected slot explicitly, present the selection, require explicit confirmation, persist nothing
+on No, produce exactly one intended persistence outcome on Yes, and return a structured result
+to the Agent. The LLM must not invent orientation slots. The G2 frozen production mock slots are
+exactly:
+
+- `Monday 09:00-10:00`
+- `Wednesday 13:00-14:00`
+- `Thursday 15:00-16:00`
+
+These recurring hardcoded training-project values are the only canonical `selected_slot` values
+the production Booking Flow may expose. They are not real calendar appointments; no dynamic
+dates, real calendar integration, timezone API, additional slot invention, slot capacity, or
+booking concurrency is authorized.
+
 ## B3. Confirmation and conversational state
 
 The primary design uses watsonx Orchestrate Flow/User Activity behavior to enforce the state
@@ -173,22 +251,41 @@ Prompt-only confirmation is unacceptable. One cancelled action must create zero 
 one confirmed action must create exactly one record. The Agent must not autonomously repeat a
 completed side effect unless the user explicitly starts a new request.
 
-G1 must test the minimal sequence “ask for a value → retain the value → ask for confirmation
-→ branch Yes/No” before either production capability is built.
+G1 tested the minimal sequence “ask for a value → retain the value → ask for confirmation
+→ branch Yes/No” before production side-effect capabilities were authorized.
 
-Storage-level replay/idempotency protection is a production consideration, not a required
-implementation or acceptance criterion for this training project.
+G1B tenant evidence proved the native User Activity path using the smallest field-based
+multi-turn pattern: collect a value, display the retained value, ask explicit Yes/No
+confirmation, and branch without side effects. The earlier form-based pattern is not the
+approved production pattern because it failed in the remote runtime. The User Activity fallback
+in D2 remains inactive unless later runtime evidence shows the proven field-based pattern is
+unsuitable for the production IT or booking flows.
+
+No dedicated idempotency framework or general storage abstraction is mandated for this training
+project. The observable acceptance behavior remains mandatory: one cancelled action creates zero
+records, one confirmed action creates exactly one record, and the Agent must not autonomously
+repeat a completed side effect. G2 must implement the smallest deterministic mechanism sufficient
+to prove those outcomes. The exact COS key/idempotency design remains a G2 production-detail
+decision.
 
 ## B4. Remote persistence
 
-IBM Cloudant Lite is the primary mock persistence service. The minimal design uses one
-database, `onboarding_mock`, with document types `it_request` and `orientation_booking`.
-Remote credentials are supplied at runtime through Watson/Orchestrate connections and are
-never committed.
+IBM Cloud Object Storage is the frozen mock persistence backend. The minimal design stores
+bounded JSON objects in the active replacement bucket `agentic-onboarding-p2-9g821-01` in the
+`eu-de` region. Remote credentials are supplied at runtime through the watsonx Orchestrate
+`API_KEY_AUTH` connection `cos_onboarding` and are never committed. The Draft connection is
+configured; Live is not configured yet.
 
-The design intentionally has no ORM, migrations, repository framework, PostgreSQL, Redis, or
-unnecessary storage abstraction. Exact minimal document fields are frozen in G2 after G1 proves
-the tenant-compatible Cloudant transport.
+Persistence transport is IBM IAM token exchange plus COS REST API using Python standard-library
+HTTP. No third-party COS SDK or HTTP dependency is authorized. The design intentionally has no
+ORM, migrations, repository framework, PostgreSQL, Redis, Cloudant dependency, or unnecessary
+storage abstraction. Exact minimal JSON object keys for `it_request` and `orientation_booking`
+are frozen in G2 when the production domain persistence tools are implemented.
+
+Cloudant was the initial candidate. Provisioning was blocked by IBM Cloud account/admin
+approval; the original requirement permits a file or simple datastore; COS was evaluated with
+local and remote Orchestrate evidence and is therefore frozen as the project persistence
+backend. This is not a claim that COS is universally superior to Cloudant.
 
 ## B5. Part B architecture
 
@@ -201,8 +298,20 @@ The watsonx Orchestrate Flow remains the sole orchestrator. Its stage ownership 
 - an LLM drafting call only for automatically routed tickets; and
 - deterministic structured-output assembly for every path.
 
-The preferred LLM integration is Prompt Node, subject to the G1 proof in D3. This is not a
-standalone Python pipeline. The review threshold is not chosen in G0.
+G1B tenant evidence rejected Prompt Node as the Part B LLM execution mode for this project.
+Prompt Node imported, executed, and returned strict structured output, but repeat execution of
+the same input produced semantically inconsistent/input-unfaithful classification evidence.
+Therefore `PIPELINE_LLM_MODE = PYTHON_WATSONX_TOOL` is selected under D3. The watsonx
+Orchestrate Flow remains the sole orchestrator; the Python tool performs the bounded watsonx.ai
+LLM call, validates the structured result, and returns control to the Flow. This is not a
+standalone Python pipeline. The G3 DEVELOPMENT-selected classifier configuration is frozen as:
+model `meta-llama/llama-4-maverick-17b-128e-instruct-fp8`, Orchestrate model reference
+`watsonx/meta-llama/llama-4-maverick-17b-128e-instruct-fp8`, classifier prompt
+`support-triage-classifier-v2` with SHA-256
+`a78f13a71cb344429502ca2aeb0b36281608cfbea6c45c6bb509b678e3d3e9b6`, repair instruction
+`support-triage-classifier-repair-v1` with SHA-256
+`b55bf893bba9e0373d70a4f839741b46ebacd82c1da94b622377b465e052b39b`,
+`MAX_CLASSIFIER_ATTEMPTS=2`, and confidence threshold `0.80`.
 
 ## B6. Extended classifier contract
 
@@ -218,7 +327,8 @@ the absence of classifier-owned review state are validated with Pydantic and tes
 
 ## B7. Deterministic review policy
 
-Human review is required when any one of these approved conditions is true:
+The frozen calibrated confidence threshold is `0.80`. Human review is required when any one of
+these approved conditions is true:
 
 - classifier confidence is below the frozen calibrated threshold;
 - `secondary_category` is not null;
@@ -286,16 +396,29 @@ Initial threshold candidates are exactly 0.50, 0.60, 0.70, and 0.80. Selection f
 development behavior rather than intuition. In addition to the original evaluation requirements,
 report Ticket 10 unknown-urgency handling explicitly, human-review rate, auto-route rate,
 auto-route correctness, latency, token usage when available, estimated cost per ticket, and the
-estimated implication at 1,000 tickets/day.
+estimated implication at 1,000 tickets/day. G3 DEVELOPMENT calibration selected threshold `0.80`
+after comparing the approved candidates. This threshold is frozen before held-out evaluation and
+must not be changed based on held-out outcomes.
 
 ## B12. Model-selection policy
 
-Selected model: `PENDING_G1`.
+Selected model: `meta-llama/llama-4-maverick-17b-128e-instruct-fp8`.
 
-G1 must list the models actually available in the Watson environment, then select one suitable
+G1 listed the models actually available in the Watson environment, then selected one suitable
 available model for the project. Formal benchmarking is avoided unless that selected model
-fails the required quality targets. Once supported by real tenant evidence, the chosen model
-is recorded and frozen with the Part B LLM mode.
+fails the required quality targets. The chosen model is recorded and frozen with the Part B LLM
+mode.
+
+G1 tenant evidence now supports `meta-llama/llama-4-maverick-17b-128e-instruct-fp8` as the
+selected model under the fixed model-selection priority: safety first, then structured-output
+reliability and semantic correctness, then support-draft quality, with latency/token usage only
+as tie-breakers. This selection is based on bounded G1 smoke and corrective confirmation
+evidence, not a formal benchmark and not a claim that the model is perfect.
+
+The selected model retains two known residual risks that must remain visible for later Part B
+prompt design and evaluation: unknown-urgency over-inference, and unsupported future-action/SLA
+promises in support drafting. Later implementation and evaluation must handle and re-evaluate
+these risks rather than treating the G1 selection as proof that they are resolved.
 
 # C. Watson platform constraints
 
@@ -310,9 +433,12 @@ actual tenant:
   tenant before dependent logic is implemented.
 - Tool and remote Python filenames use only safe alphanumeric characters and underscores.
 - Remote tool packages remain well below the Watson compressed-package limit.
-- Prompt Node is an unproven tenant capability until the G1 spike succeeds; documentation
-  alone is not evidence.
-- Remote Orchestrate, watsonx.ai, native Knowledge Base, User Activity, and Cloudant behavior
+- Prompt Node is structurally available in the tenant but is not selected for Part B because
+  the G1B spike showed unreliable semantic/input-fidelity behavior under repeat execution.
+- Native Knowledge Base ingestion uses platform-supported document formats. The authoritative
+  Markdown policy sources are preserved under `mock_docs/`; byte-identical `.txt`
+  representations are used under `knowledge/sources/` for native Knowledge Base ingestion.
+- Remote Orchestrate, watsonx.ai, native Knowledge Base, User Activity, and COS behavior
   may be claimed only after direct observation with recorded evidence.
 
 Remote validation is performed at meaningful component boundaries: a focused batch for the IT
@@ -326,33 +452,40 @@ to implement parallel architectures.
 
 ## D1. Knowledge fallback
 
-Primary: native watsonx Orchestrate Knowledge Base. If answer quality materially fails after
-one reasonable tuning attempt, stop, preserve evidence, and request supervisor approval to
-activate custom RAG. Do not build custom RAG preemptively.
+Primary: native watsonx Orchestrate Knowledge Base using platform-supported ingestion files.
+G1B proved one-document viability from a byte-identical `.txt` representation of the approved
+leave-policy Markdown source. If answer quality materially fails after one reasonable tuning
+attempt, stop, preserve evidence, and request supervisor approval to activate custom RAG. Do
+not build custom RAG preemptively.
 
 ## D2. User Activity fallback
 
-Primary: User Activity collects/retains values and enforces confirmation. If the G1 tenant
-spike shows that behavior is unsuitable, the Agent may collect missing fields conversationally
-and pass a complete payload to a small confirmation workflow before persistence. The workflow,
-not a prompt alone, must still protect the side effect. Freeze the chosen strategy in G1.
+Primary: field-based User Activity collects/retains values and enforces confirmation. G1B
+proved the field-based multi-turn pattern in the tenant and rejected the earlier form-based
+pattern. If later production evidence shows that behavior is unsuitable, the Agent may collect
+missing fields conversationally and pass a complete payload to a small confirmation workflow
+before persistence. The workflow, not a prompt alone, must still protect the side effect.
+The field-based User Activity strategy was frozen in G1.
 
 ## D3. Prompt Node fallback
 
-G1 must run a minimal real flow: input → Prompt Node → strict structured output → end.
+G1 ran a minimal real flow: input → Prompt Node → strict structured output → end.
 
-- If reliable in the actual tenant, freeze `PIPELINE_LLM_MODE = PROMPT_NODE`.
-- If unreliable, freeze `PIPELINE_LLM_MODE = PYTHON_WATSONX_TOOL` and use a Python LLM tool
-  that calls watsonx.ai, validates the structured result, and returns control to the Flow.
+The tenant proved Prompt Node import, execution, and strict structured output, but did not
+prove sufficient semantic repeatability or input fidelity for Part B. Therefore
+`PIPELINE_LLM_MODE = PYTHON_WATSONX_TOOL` is selected. The Python LLM tool calls watsonx.ai,
+validates the structured result, and returns control to the Flow.
 
 The fallback does not authorize a second standalone Python pipeline; the Flow remains the
 orchestrator.
 
-## D4. Cloudant transport/dependency fallback boundary
+## D4. Persistence transport/dependency boundary
 
-G1 must prove a real write/read and determine the smallest tenant-compatible transport. If the
-preferred client/package is incompatible, stop and select a minimal compatible transport with
-supervisor approval. Do not introduce a general persistence layer or unrelated datastore.
+G1 proved COS as the real write/read backend using IBM IAM, COS REST, the `cos_onboarding`
+Orchestrate connection, stdlib HTTP, and no third-party COS/HTTP dependency. If later G2
+production implementation discovers a tenant incompatibility in this frozen transport, stop and
+request supervisor approval before changing backend, dependency, or transport. Do not introduce
+a general persistence layer or unrelated datastore.
 
 # E. Frozen non-goals
 

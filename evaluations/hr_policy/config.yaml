@@ -1,0 +1,4 @@
+test_paths:
+  - evaluations/hr_policy/ground_truth
+output_dir: artifacts/evaluations/hr_policy
+n_runs: 1

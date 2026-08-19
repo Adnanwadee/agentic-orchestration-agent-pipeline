@@ -1,0 +1,491 @@
+{
+  "development_ids": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T08",
+    "T09",
+    "T10",
+    "T12",
+    "T14",
+    "T16",
+    "T17",
+    "T19",
+    "T21",
+    "T23",
+    "T27"
+  ],
+  "freeze_version": "g3-support-triage-dataset-v1",
+  "frozen_hashes": {
+    "support_tickets_ground_truth": "ef1a83c4a379065917bd4220f4db8eaed6ea3ada2715a4c31a6b1948d2075f81",
+    "support_tickets_seed": "40901dbbc12ec559ca1b5fc257adb8b1a3406eac08caca66da970e323ff5d7b3",
+    "support_tickets_split": "c56860c4cdf337a9c7c1fa7b465fc2a2bde0703871ed2d3627987c822a798be2"
+  },
+  "metrics": {
+    "category_accuracy": 0.8666666666666667,
+    "category_correct": 13,
+    "category_denominator": 15,
+    "explicit_ticket_reports": {
+      "T09": {
+        "attempt_count": 1,
+        "classification": {
+          "category": "account",
+          "confidence": 0.9,
+          "reasoning": "The user is requesting an account change and an invoice, which are two distinct issues belonging to different categories.",
+          "secondary_category": "billing",
+          "urgency": "low"
+        },
+        "error_code": null,
+        "error_message": null,
+        "latency_seconds": 0.8163267998024821,
+        "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+        "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+        "prompt_version": "support-triage-classifier-v1",
+        "ticket_id": "T09",
+        "ticket_text": "I need to transfer my account to a different email address because I'm changing companies. I also need an invoice for the last 12 months for my accountant.",
+        "token_usage": {
+          "completion_tokens": 56,
+          "prompt_tokens": 405,
+          "total_tokens": 461
+        },
+        "validation_status": "valid"
+      },
+      "T10": {
+        "attempt_count": 1,
+        "classification": {
+          "category": "technical",
+          "confidence": 0.5,
+          "reasoning": "The phrase 'it doesn't work' implies a technical issue",
+          "secondary_category": null,
+          "urgency": null
+        },
+        "error_code": null,
+        "error_message": null,
+        "latency_seconds": 0.6660249000415206,
+        "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+        "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+        "prompt_version": "support-triage-classifier-v1",
+        "ticket_id": "T10",
+        "ticket_text": "it doesnt work fix it",
+        "token_usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 380,
+          "total_tokens": 417
+        },
+        "validation_status": "valid"
+      },
+      "T21": {
+        "attempt_count": 1,
+        "classification": {
+          "category": "general",
+          "confidence": 0.5,
+          "reasoning": "Vague complaint without specifics",
+          "secondary_category": null,
+          "urgency": null
+        },
+        "error_code": null,
+        "error_message": null,
+        "latency_seconds": 1.0631985999643803,
+        "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+        "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+        "prompt_version": "support-triage-classifier-v1",
+        "ticket_id": "T21",
+        "ticket_text": "Something looks wrong in my workspace.",
+        "token_usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 381,
+          "total_tokens": 419
+        },
+        "validation_status": "valid"
+      }
+    },
+    "null_urgency_handling": [
+      {
+        "classification_present": true,
+        "expected_urgency": null,
+        "null_urgency_match": true,
+        "predicted_urgency": null,
+        "ticket_id": "T10",
+        "validation_status": "valid"
+      },
+      {
+        "classification_present": true,
+        "expected_urgency": null,
+        "null_urgency_match": true,
+        "predicted_urgency": null,
+        "ticket_id": "T21",
+        "validation_status": "valid"
+      }
+    ],
+    "urgency_accuracy": 0.7692307692307693,
+    "urgency_correct": 10,
+    "urgency_denominator": 13
+  },
+  "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+  "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+  "prompt_version": "support-triage-classifier-v1",
+  "results": [
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "billing",
+        "confidence": 0.9,
+        "reasoning": "Double charge for subscription, customer indicates immediate need for fix",
+        "secondary_category": null,
+        "urgency": "high"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.781133699696511,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T01",
+      "ticket_text": "I was charged twice for my subscription this month. I need this fixed immediately \u2014 I can't afford to have money taken from my account like this.",
+      "token_usage": {
+        "completion_tokens": 45,
+        "prompt_tokens": 403,
+        "total_tokens": 448
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "general",
+        "confidence": 0.9,
+        "reasoning": "Customer inquires about student discounts with no indication of urgency",
+        "secondary_category": null,
+        "urgency": "low"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.8727319003082812,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T02",
+      "ticket_text": "Hi, just wondering if you offer student discounts? No rush.",
+      "token_usage": {
+        "completion_tokens": 45,
+        "prompt_tokens": 387,
+        "total_tokens": 432
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "technical",
+        "confidence": 0.9,
+        "reasoning": "Crashing application blocks team from closing month-end",
+        "secondary_category": null,
+        "urgency": "high"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 1.495614199899137,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T03",
+      "ticket_text": "The application crashes every time I try to export a report. I've tried reinstalling but the problem persists. This is blocking my entire team from closing month-end.",
+      "token_usage": {
+        "completion_tokens": 43,
+        "prompt_tokens": 406,
+        "total_tokens": 449
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "account",
+        "confidence": 0.8,
+        "reasoning": "The user is having trouble accessing their account due to a forgotten password and is experiencing issues with the password reset email",
+        "secondary_category": "technical",
+        "urgency": "medium"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 1.0637237001210451,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T04",
+      "ticket_text": "I forgot my password and the reset email isn't arriving. I've checked spam.",
+      "token_usage": {
+        "completion_tokens": 57,
+        "prompt_tokens": 389,
+        "total_tokens": 446
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "technical",
+        "confidence": 0.8,
+        "reasoning": "The ticket mentions a specific technical issue with the export feature being slow.",
+        "secondary_category": null,
+        "urgency": "low"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.7820712001994252,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T08",
+      "ticket_text": "The export feature is a bit slow sometimes. Not urgent, just flagging it.",
+      "token_usage": {
+        "completion_tokens": 48,
+        "prompt_tokens": 391,
+        "total_tokens": 439
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "account",
+        "confidence": 0.9,
+        "reasoning": "The user is requesting an account change and an invoice, which are two distinct issues belonging to different categories.",
+        "secondary_category": "billing",
+        "urgency": "low"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.8163267998024821,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T09",
+      "ticket_text": "I need to transfer my account to a different email address because I'm changing companies. I also need an invoice for the last 12 months for my accountant.",
+      "token_usage": {
+        "completion_tokens": 56,
+        "prompt_tokens": 405,
+        "total_tokens": 461
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "technical",
+        "confidence": 0.5,
+        "reasoning": "The phrase 'it doesn't work' implies a technical issue",
+        "secondary_category": null,
+        "urgency": null
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.6660249000415206,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T10",
+      "ticket_text": "it doesnt work fix it",
+      "token_usage": {
+        "completion_tokens": 37,
+        "prompt_tokens": 380,
+        "total_tokens": 417
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "billing",
+        "confidence": 0.9,
+        "reasoning": "Payment method expiration is a billing issue and the portal not saving the replacement card is a technical issue",
+        "secondary_category": "technical",
+        "urgency": "high"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.7173454998992383,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T12",
+      "ticket_text": "Our payment method expires tomorrow and the portal will not save the replacement card.",
+      "token_usage": {
+        "completion_tokens": 54,
+        "prompt_tokens": 389,
+        "total_tokens": 443
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "technical",
+        "confidence": 0.9,
+        "reasoning": "The ticket states that none of the users can access the service, indicating a critical technical issue affecting all users.",
+        "secondary_category": null,
+        "urgency": "critical"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.8154914998449385,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T14",
+      "ticket_text": "None of our users can access the service and our support desk is receiving calls from every branch.",
+      "token_usage": {
+        "completion_tokens": 56,
+        "prompt_tokens": 393,
+        "total_tokens": 449
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "account",
+        "confidence": 0.9,
+        "reasoning": "The ticket mentions a teammate who left the company and needs admin access removed, indicating an account management issue with a sense of urgency due to the 'today' deadline.",
+        "secondary_category": null,
+        "urgency": "high"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.785187799949199,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T16",
+      "ticket_text": "A teammate left the company and I need their admin access removed today.",
+      "token_usage": {
+        "completion_tokens": 67,
+        "prompt_tokens": 388,
+        "total_tokens": 455
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "general",
+        "confidence": 0.9,
+        "reasoning": "The customer is asking for general information about service hours during public holidays.",
+        "secondary_category": null,
+        "urgency": "low"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.6730553000234067,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T17",
+      "ticket_text": "Where can I find your service hours during public holidays?",
+      "token_usage": {
+        "completion_tokens": 48,
+        "prompt_tokens": 385,
+        "total_tokens": 433
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "billing",
+        "confidence": 0.8,
+        "reasoning": "The ticket mentions a billing issue and inability to edit the organization profile, indicating both billing and account issues",
+        "secondary_category": "account",
+        "urgency": "medium"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.6993324998766184,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T19",
+      "ticket_text": "My receipt shows the wrong billing address and I cannot edit the organization profile.",
+      "token_usage": {
+        "completion_tokens": 55,
+        "prompt_tokens": 389,
+        "total_tokens": 444
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "general",
+        "confidence": 0.5,
+        "reasoning": "Vague complaint without specifics",
+        "secondary_category": null,
+        "urgency": null
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 1.0631985999643803,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T21",
+      "ticket_text": "Something looks wrong in my workspace.",
+      "token_usage": {
+        "completion_tokens": 38,
+        "prompt_tokens": 381,
+        "total_tokens": 419
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "account",
+        "confidence": 0.8,
+        "reasoning": "Active annual subscription was downgraded to free plan",
+        "secondary_category": "billing",
+        "urgency": "high"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 3.420332199893892,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T23",
+      "ticket_text": "I was downgraded to the free plan even though the annual subscription is active.",
+      "token_usage": {
+        "completion_tokens": 45,
+        "prompt_tokens": 391,
+        "total_tokens": 436
+      },
+      "validation_status": "valid"
+    },
+    {
+      "attempt_count": 1,
+      "classification": {
+        "category": "general",
+        "confidence": 0.8,
+        "reasoning": "The ticket is a general inquiry about partnership options without indicating urgency or specific issue",
+        "secondary_category": null,
+        "urgency": "low"
+      },
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.6415115999989212,
+      "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "prompt_sha256": "5ae597bc3fe6af83df93c3b29f062a770186f5281ca27d1a046bd8e4ec689210",
+      "prompt_version": "support-triage-classifier-v1",
+      "ticket_id": "T27",
+      "ticket_text": "Can someone call me about partnership options?",
+      "token_usage": {
+        "completion_tokens": 49,
+        "prompt_tokens": 382,
+        "total_tokens": 431
+      },
+      "validation_status": "valid"
+    }
+  ],
+  "run_started_utc": "2026-08-18T00:04:38.946705Z"
+}

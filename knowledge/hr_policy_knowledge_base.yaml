@@ -1,0 +1,14 @@
+spec_version: v1
+kind: knowledge_base
+name: hr_policy_knowledge_base
+description: >
+  HR policy knowledge base covering benefits and compensation, code of conduct,
+  IT access policy, leave policy, and new-hire orientation guidance.
+vector_index:
+  extraction_strategy: standard
+documents:
+  - sources/benefits-and-compensation.txt
+  - sources/code-of-conduct.txt
+  - sources/it-access-policy.txt
+  - sources/leave-policy.txt
+  - sources/new-hire-orientation-guide.txt

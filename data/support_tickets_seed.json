@@ -1,0 +1,182 @@
+[
+  {
+    "id": "T01",
+    "text": "I was charged twice for my subscription this month. I need this fixed immediately — I can't afford to have money taken from my account like this.",
+    "source": "supplied",
+    "brief_expectation": "Billing / High"
+  },
+  {
+    "id": "T02",
+    "text": "Hi, just wondering if you offer student discounts? No rush.",
+    "source": "supplied",
+    "brief_expectation": "Billing / Low"
+  },
+  {
+    "id": "T03",
+    "text": "The application crashes every time I try to export a report. I've tried reinstalling but the problem persists. This is blocking my entire team from closing month-end.",
+    "source": "supplied",
+    "brief_expectation": "Technical / Critical"
+  },
+  {
+    "id": "T04",
+    "text": "I forgot my password and the reset email isn't arriving. I've checked spam.",
+    "source": "supplied",
+    "brief_expectation": "Account / Medium"
+  },
+  {
+    "id": "T05",
+    "text": "Everything is down. None of our staff can log in. We have a client presentation in 2 hours.",
+    "source": "supplied",
+    "brief_expectation": "Technical / Critical"
+  },
+  {
+    "id": "T06",
+    "text": "How do I change the email address on my account?",
+    "source": "supplied",
+    "brief_expectation": "Account / Low"
+  },
+  {
+    "id": "T07",
+    "text": "I cancelled my subscription 3 weeks ago but I was still charged this month. I want a refund and I want to know why this happened.",
+    "source": "supplied",
+    "brief_expectation": "Billing / High"
+  },
+  {
+    "id": "T08",
+    "text": "The export feature is a bit slow sometimes. Not urgent, just flagging it.",
+    "source": "supplied",
+    "brief_expectation": "Technical / Low"
+  },
+  {
+    "id": "T09",
+    "text": "I need to transfer my account to a different email address because I'm changing companies. I also need an invoice for the last 12 months for my accountant.",
+    "source": "supplied",
+    "brief_expectation": "Original brief Account + Billing / Medium; project-approved normalized interpretation category=account, secondary_category=billing, urgency=medium, requires review"
+  },
+  {
+    "id": "T10",
+    "text": "it doesnt work fix it",
+    "source": "supplied",
+    "brief_expectation": "Original brief Technical / Unknown / low confidence; project-approved normalized interpretation category=technical, secondary_category=null, urgency=null, requires review"
+  },
+  {
+    "id": "T11",
+    "text": "Can you send me a copy of my latest invoice for renewal planning?",
+    "source": "synthetic",
+    "design_coverage_intent": "Billing information request with low urgency"
+  },
+  {
+    "id": "T12",
+    "text": "Our payment method expires tomorrow and the portal will not save the replacement card.",
+    "source": "synthetic",
+    "design_coverage_intent": "Billing issue with time-sensitive urgency"
+  },
+  {
+    "id": "T13",
+    "text": "The dashboard loads, but every chart shows blank data after this morning's update.",
+    "source": "synthetic",
+    "design_coverage_intent": "Technical defect with medium operational impact"
+  },
+  {
+    "id": "T14",
+    "text": "None of our users can access the service and our support desk is receiving calls from every branch.",
+    "source": "synthetic",
+    "design_coverage_intent": "Technical outage with critical urgency"
+  },
+  {
+    "id": "T15",
+    "text": "Please help me update the display name shown on my account profile.",
+    "source": "synthetic",
+    "design_coverage_intent": "Account maintenance with low urgency"
+  },
+  {
+    "id": "T16",
+    "text": "A teammate left the company and I need their admin access removed today.",
+    "source": "synthetic",
+    "design_coverage_intent": "Account access change with high urgency"
+  },
+  {
+    "id": "T17",
+    "text": "Where can I find your service hours during public holidays?",
+    "source": "synthetic",
+    "design_coverage_intent": "General question with low urgency"
+  },
+  {
+    "id": "T18",
+    "text": "I have feedback about the new menu layout; it is confusing but not blocking my work.",
+    "source": "synthetic",
+    "design_coverage_intent": "General feedback suitable for low-priority routing"
+  },
+  {
+    "id": "T19",
+    "text": "My receipt shows the wrong billing address and I cannot edit the organization profile.",
+    "source": "synthetic",
+    "design_coverage_intent": "Multi-category billing and account case"
+  },
+  {
+    "id": "T20",
+    "text": "The login page says my account is locked after one failed attempt.",
+    "source": "synthetic",
+    "design_coverage_intent": "Ambiguous account or technical access issue"
+  },
+  {
+    "id": "T21",
+    "text": "Something looks wrong in my workspace.",
+    "source": "synthetic",
+    "design_coverage_intent": "Vague case where urgency cannot safely be inferred"
+  },
+  {
+    "id": "T22",
+    "text": "A scheduled report did not run overnight and executives need the numbers before the morning review.",
+    "source": "synthetic",
+    "design_coverage_intent": "Technical issue with high urgency"
+  },
+  {
+    "id": "T23",
+    "text": "I was downgraded to the free plan even though the annual subscription is active.",
+    "source": "synthetic",
+    "design_coverage_intent": "Billing and account-plan mismatch"
+  },
+  {
+    "id": "T24",
+    "text": "Please explain the difference between monthly and annual billing.",
+    "source": "synthetic",
+    "design_coverage_intent": "Billing question with low urgency"
+  },
+  {
+    "id": "T25",
+    "text": "The mobile app freezes when I attach a file larger than 10 MB.",
+    "source": "synthetic",
+    "design_coverage_intent": "Technical defect suitable for medium-priority routing"
+  },
+  {
+    "id": "T26",
+    "text": "My invitation link expired before I could finish setting up the account.",
+    "source": "synthetic",
+    "design_coverage_intent": "Account onboarding issue with medium urgency"
+  },
+  {
+    "id": "T27",
+    "text": "Can someone call me about partnership options?",
+    "source": "synthetic",
+    "design_coverage_intent": "General inquiry outside the core support taxonomy edge"
+  },
+  {
+    "id": "T28",
+    "text": "We are being billed for seats that were removed last week, and the user list now shows duplicate inactive accounts.",
+    "source": "synthetic",
+    "design_coverage_intent": "Multi-category billing and account edge case"
+  },
+  {
+    "id": "T29",
+    "text": "Exported CSV files contain garbled characters for every customer name with an accent mark.",
+    "source": "synthetic",
+    "design_coverage_intent": "Technical data-quality issue with medium urgency"
+  },
+  {
+    "id": "T30",
+    "text": "Is there a status page where I can check incidents before opening a ticket?",
+    "source": "synthetic",
+    "design_coverage_intent": "General self-service question with low urgency"
+  }
+]

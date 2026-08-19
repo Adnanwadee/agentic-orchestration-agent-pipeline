@@ -1,0 +1,182 @@
+[
+  {
+    "ticket_id": "T01",
+    "expected_category": "billing",
+    "expected_secondary_category": null,
+    "expected_urgency": "high"
+  },
+  {
+    "ticket_id": "T02",
+    "expected_category": "billing",
+    "expected_secondary_category": null,
+    "expected_urgency": "low"
+  },
+  {
+    "ticket_id": "T03",
+    "expected_category": "technical",
+    "expected_secondary_category": null,
+    "expected_urgency": "critical"
+  },
+  {
+    "ticket_id": "T04",
+    "expected_category": "account",
+    "expected_secondary_category": null,
+    "expected_urgency": "medium"
+  },
+  {
+    "ticket_id": "T05",
+    "expected_category": "technical",
+    "expected_secondary_category": null,
+    "expected_urgency": "critical"
+  },
+  {
+    "ticket_id": "T06",
+    "expected_category": "account",
+    "expected_secondary_category": null,
+    "expected_urgency": "low"
+  },
+  {
+    "ticket_id": "T07",
+    "expected_category": "billing",
+    "expected_secondary_category": null,
+    "expected_urgency": "high"
+  },
+  {
+    "ticket_id": "T08",
+    "expected_category": "technical",
+    "expected_secondary_category": null,
+    "expected_urgency": "low"
+  },
+  {
+    "ticket_id": "T09",
+    "expected_category": "account",
+    "expected_secondary_category": "billing",
+    "expected_urgency": "medium"
+  },
+  {
+    "ticket_id": "T10",
+    "expected_category": "technical",
+    "expected_secondary_category": null,
+    "expected_urgency": null
+  },
+  {
+    "ticket_id": "T11",
+    "expected_category": "billing",
+    "expected_secondary_category": null,
+    "expected_urgency": "low"
+  },
+  {
+    "ticket_id": "T12",
+    "expected_category": "billing",
+    "expected_secondary_category": null,
+    "expected_urgency": "high"
+  },
+  {
+    "ticket_id": "T13",
+    "expected_category": "technical",
+    "expected_secondary_category": null,
+    "expected_urgency": "medium"
+  },
+  {
+    "ticket_id": "T14",
+    "expected_category": "technical",
+    "expected_secondary_category": null,
+    "expected_urgency": "critical"
+  },
+  {
+    "ticket_id": "T15",
+    "expected_category": "account",
+    "expected_secondary_category": null,
+    "expected_urgency": "low"
+  },
+  {
+    "ticket_id": "T16",
+    "expected_category": "account",
+    "expected_secondary_category": null,
+    "expected_urgency": "high"
+  },
+  {
+    "ticket_id": "T17",
+    "expected_category": "general",
+    "expected_secondary_category": null,
+    "expected_urgency": "low"
+  },
+  {
+    "ticket_id": "T18",
+    "expected_category": "general",
+    "expected_secondary_category": null,
+    "expected_urgency": "low"
+  },
+  {
+    "ticket_id": "T19",
+    "expected_category": "billing",
+    "expected_secondary_category": "account",
+    "expected_urgency": "medium"
+  },
+  {
+    "ticket_id": "T20",
+    "expected_category": "account",
+    "expected_secondary_category": null,
+    "expected_urgency": "medium"
+  },
+  {
+    "ticket_id": "T21",
+    "expected_category": "technical",
+    "expected_secondary_category": null,
+    "expected_urgency": null
+  },
+  {
+    "ticket_id": "T22",
+    "expected_category": "technical",
+    "expected_secondary_category": null,
+    "expected_urgency": "high"
+  },
+  {
+    "ticket_id": "T23",
+    "expected_category": "account",
+    "expected_secondary_category": "billing",
+    "expected_urgency": "medium"
+  },
+  {
+    "ticket_id": "T24",
+    "expected_category": "billing",
+    "expected_secondary_category": null,
+    "expected_urgency": "low"
+  },
+  {
+    "ticket_id": "T25",
+    "expected_category": "technical",
+    "expected_secondary_category": null,
+    "expected_urgency": "medium"
+  },
+  {
+    "ticket_id": "T26",
+    "expected_category": "account",
+    "expected_secondary_category": null,
+    "expected_urgency": "medium"
+  },
+  {
+    "ticket_id": "T27",
+    "expected_category": "general",
+    "expected_secondary_category": null,
+    "expected_urgency": "low"
+  },
+  {
+    "ticket_id": "T28",
+    "expected_category": "billing",
+    "expected_secondary_category": "account",
+    "expected_urgency": "medium"
+  },
+  {
+    "ticket_id": "T29",
+    "expected_category": "technical",
+    "expected_secondary_category": null,
+    "expected_urgency": "medium"
+  },
+  {
+    "ticket_id": "T30",
+    "expected_category": "general",
+    "expected_secondary_category": null,
+    "expected_urgency": "low"
+  }
+]

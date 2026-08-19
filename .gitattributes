@@ -1,0 +1,2 @@
+knowledge/sources/*.txt whitespace=-blank-at-eol
+mock_docs/*.md whitespace=-blank-at-eol

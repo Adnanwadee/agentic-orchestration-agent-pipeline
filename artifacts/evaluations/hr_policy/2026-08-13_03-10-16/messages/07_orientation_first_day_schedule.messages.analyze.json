@@ -1,0 +1,119 @@
+[
+    {
+        "message": {
+            "role": "user",
+            "content": "What happens on my first day of orientation?",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "{\"type\": \"tool_call\", \"name\": \"hr_policy_knowledge_base\", \"args\": {\"query\": \"first day of orientation\"}, \"id\": \"chatcmpl-tool-9480407f9d2f3cf7\"}",
+            "type": "tool_call",
+            "event": "run.step.delta",
+            "conversational_search_metadata": null,
+            "tool_calls": [
+                {
+                    "id": "chatcmpl-tool-9480407f9d2f3cf7",
+                    "function": {
+                        "name": "hr_policy_knowledge_base",
+                        "arguments": "{\"query\": \"first day of orientation\"}"
+                    },
+                    "type": "function"
+                }
+            ],
+            "tool_call_id": "chatcmpl-tool-9480407f9d2f3cf7",
+            "response_time": 5.891,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": {
+            "reason": "irrelevant tool call"
+        }
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "{\"type\": \"tool_response\", \"content\": \"[\\n  {\\n    \\\"title\\\": \\\"new-hire-orientation-guide.txt\\\",\\n    \\\"body\\\": \\\"2 hours)\\\\n- Attend your team's regular stand-up or weekly meeting\\\\n- Shadow your buddy or a senior colleague on a current task\\\\n- Schedule introductory meetings with key stakeholders (your manager will advise who)\\\\n\\\\n### Day 4\\\\u20135 \\\\u2014 Tools and Access\\\\n\\\\n- Confirm all role-specific system access is working (see IT Access Policy)\\\\n- Complete any pending access requests through the IT portal\\\\n- Set up your development environment or core tooling (your team will share their setup guide)\\\\n- Attend the **Orientation Session** \\\\u2014 see Section below\\\\n\\\\n---\\\\n\\\\n## Mandatory First-Week Completions\\\\n\\\\nThe following must be completed within your first 5 working days. Completion is tracked in the HR portal.\\\\n\\\\n- [ ] Sign and return your employment contract (if not already done)\\\\n- [ ] Enrol in the medical aid scheme (30-day window from start date)\\\\n- [ ] Nominate provident fund beneficiaries in the fund portal\\\\n- [ ] Read and acknowledge: Code of Conduct\\\\n- [ ] Read and acknowledge: IT Access and Equipment Policy\\\\n- [ ] Read and acknowledge: Leave Policy\\\\n- [ ] Complete: Harassment Prevention online module (approx. 45 minutes)\\\\n- [ ] Complete: Information Security Awareness online module (approx. 30 minutes)\\\\n- [ ] Attend: New Hire Orientation Session\\\\n\\\\nYour manager will check in at the end of week one to confirm these are done.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"new-hire-orientation-guide.txt\\\",\\n    \\\"body\\\": \\\"# New Hire Orientation Guide\\\\n**Apex Solutions \\\\u2014 Welcome to the Team**  \\\\n**People & Culture | 2025 Edition**\\\\n\\\\n---\\\\n\\\\n## Welcome\\\\n\\\\nWelcome to Apex Solutions. This guide covers everything you need to get set up, oriented, and productive in your first two weeks. Read it end to end on your first day \\\\u2014 it will answer most of the questions you'll have before you think to ask them.\\\\n\\\\nYour first point of contact for anything not covered here is your HR buddy, assigned in your onboarding email, and your direct manager.\\\\n\\\\n---\\\\n\\\\n## Week 1 Schedule\\\\n\\\\n### Day 1 \\\\u2014 Setup and Orientation\\\\n\\\\n| Time | Activity |\\\\n|---|---|\\\\n| 09:00 | Welcome meeting with your manager |\\\\n| 09:30 | IT setup: collect equipment, confirm system access |\\\\n| 10:30 | HR onboarding session: contracts, benefits enrolment, policy acknowledgements |\\\\n| 12:00 | Welcome lunch with your immediate team |\\\\n| 13:30 | Self-guided: complete online modules (see below) |\\\\n| 15:00 | Meet your buddy \\\\u2014 30-minute introductory call |\\\\n| 16:00 | Free time: explore the intranet, read team documentation |\\\\n\\\\n### Day 2\\\\u20133 \\\\u2014 Company and Role Context\\\\n\\\\n- Complete the Company Overview module on the learning portal (approx.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"new-hire-orientation-guide.txt\\\",\\n    \\\"body\\\": \\\"If any expected access is missing after day 1, submit a request through the IT portal.\\\\n\\\\n---\\\\n\\\\n## Office Practicalities\\\\n\\\\n**Location:** 12 Innovation Drive, Sandton. Parking is available in the basement \\\\u2014 register your vehicle registration with reception on your first day to receive an access tag.\\\\n\\\\n**Access card:** Issued by reception on day 1. Keep it with you at all times in the office. Lost cards must be reported immediately to reception and IT Security.\\\\n\\\\n**Kitchen and breakrooms:** Fully stocked with coffee, tea, and filtered water. A catered lunch is provided on Tuesdays in the main kitchen. Halal, vegetarian, and vegan options are always available \\\\u2014 flag other dietary requirements to HR.\\\\n\\\\n**Dress code:** Smart casual. Client-facing days or external events may require formal dress \\\\u2014 your manager will advise.\\\\n\\\\n**Meeting rooms:** Bookable through the Outlook calendar system. Rooms not used within 15 minutes of the booking start time are automatically released.\\\\n\\\\n---\\\\n\\\\n## Remote and Hybrid Working\\\\n\\\\nIf your role is hybrid, your expected in-office days will be communicated by your manager in your first week. The company minimum is 3 in-office days per week unless your role is designated fully remote.\\\\n\\\\nFor your first two weeks, you are expected to be in the office full-time regardless of your standard arrangement. This is to support your onboarding \\\\u2014 meeting people in person in your first fortnight makes a measurable difference to how quickly you settle in.\\\\n\\\\nVPN is required for remote access to all internal systems.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"new-hire-orientation-guide.txt\\\",\\n    \\\"body\\\": \\\"45 minutes)\\\\n- [ ] Complete: Information Security Awareness online module (approx. 30 minutes)\\\\n- [ ] Attend: New Hire Orientation Session\\\\n\\\\nYour manager will check in at the end of week one to confirm these are done.\\\\n\\\\n---\\\\n\\\\n## Orientation Session\\\\n\\\\n**What it is:** A half-day session (09:00\\\\u201313:00) run by People & Culture covering company history, values, business strategy, and how teams are structured. Includes a Q&A panel with senior leaders.\\\\n\\\\n**When it runs:** Every two weeks on a Wednesday. Your first available session after your start date is pre-booked for you unless you were hired within 3 days of a session date, in which case you attend the following one.\\\\n\\\\n**Where:** Main boardroom, 4th floor (or virtually via Teams for remote employees \\\\u2014 a link is sent with your booking confirmation).\\\\n\\\\n**What to bring:** Your questions. The Q&A panel is genuinely open \\\\u2014 ask what you want to know about the company.\\\\n\\\\nIf you need to change your orientation booking, contact hr@apexsolutions.internal at least 2 working days before the session.\\\\n\\\\n---\\\\n\\\\n## Key People to Know\\\\n\\\\n| Role | Who to contact about |\\\\n|---|---|\\\\n| Your direct manager | Work priorities, role expectations, leave approval |\\\\n| Your HR buddy | General onboarding questions, finding your feet socially |\\\\n| People & Culture (hr@apexsolutions.internal) | HR policies, leave, benefits, contracts |\\\\n| IT Helpdesk (ext.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"benefits-and-compensation.txt\\\",\\n    \\\"body\\\": \\\"These days may not be carried over and are separate from the standard sick leave entitlement.\\\\n\\\\n---\\\\n\\\\n## 7. Flexible Work Arrangements\\\\n\\\\n### 7.1 Hybrid Work\\\\nEmployees are expected to work from the office at least 3 days per week unless their role is designated as fully remote. Office days are coordinated at team level \\\\u2014 managers communicate expected in-office days to their teams.\\\\n\\\\n### 7.2 Flexible Hours\\\\nCore hours are 09:00\\\\u201315:00 on working days. Outside of core hours, employees have flexibility to structure their day to suit personal needs, subject to meeting their responsibilities and being available for scheduled meetings.\\\\n\\\\n### 7.3 Work From Abroad\\\\nEmployees may request to work from outside the country for up to 4 weeks per calendar year. Requests require manager approval and HR review (tax and visa implications must be assessed for each country). Work from abroad does not change the employee's employment terms or compensation.\\\\n\\\\n---\\\\n\\\\n## 8. Onboarding Benefits\\\\n\\\\nNew employees receive the following during their first month:\\\\n\\\\n- **Welcome kit:** company-branded notebook, pen set, and laptop bag delivered on day one\\\\n- **Buddy programme:** each new employee is paired with a buddy from their team for their first 90 days\\\\n- **Onboarding stipend:** R1,500 once-off payment in the first payroll to cover home office setup costs (remote/hybrid employees only)\\\\n\\\\n---\\\\n\\\\n*For benefits queries, contact People & Culture at hr@apexsolutions.internal or visit the benefits section of the HR portal.*\\\"\\n  }\\n]\", \"name\": \"hr_policy_knowledge_base\", \"tool_call_id\": \"chatcmpl-tool-9480407f9d2f3cf7\"}",
+            "type": "tool_response",
+            "event": "run.step.delta",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 0.978,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": {
+            "reason": "runtime error"
+        }
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "On your first day of orientation, you can expect the following activities to take place:\n\n1. Welcome meeting with your manager at 09:00.\n2. IT setup: collecting equipment and confirming system access at 09:30.\n3. HR onboarding session: contracts, benefits enrolment, and policy acknowledgements at 10:30.\n4. Welcome lunch with your immediate team at 12:00.\n5. Self-guided completion of online modules in the afternoon.\n6. Meet your buddy for a 30-minute introductory call at 15:00.\n7. Free time to explore the intranet and read team documentation.\n\nThere is not enough approved policy information to confirm any additional activities or details not mentioned above.",
+            "type": "conversational_search",
+            "event": "message.created",
+            "conversational_search_metadata": {
+                "tool_call_id": "chatcmpl-tool-9480407f9d2f3cf7"
+            },
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 4.026,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thanks for the detailed schedule! That looks clear. I’ll be ready for the 9 am welcome meeting.",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "You're welcome. I'm glad I could help clarify your first day. If you have any more questions or need further assistance, feel free to ask. Have a great first day at Apex Solutions.",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 6.309,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    }
+]

@@ -1,0 +1,119 @@
+[
+    {
+        "message": {
+            "role": "user",
+            "content": "What study assistance is available for employees doing a formal degree or diploma?",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "{\"type\": \"tool_call\", \"name\": \"hr_policy_knowledge_base\", \"args\": {\"query\": \"study assistance for employees doing formal degree or diploma\"}, \"id\": \"chatcmpl-tool-b2953723ecb5388d\"}",
+            "type": "tool_call",
+            "event": "run.step.delta",
+            "conversational_search_metadata": null,
+            "tool_calls": [
+                {
+                    "id": "chatcmpl-tool-b2953723ecb5388d",
+                    "function": {
+                        "name": "hr_policy_knowledge_base",
+                        "arguments": "{\"query\": \"study assistance for employees doing formal degree or diploma\"}"
+                    },
+                    "type": "function"
+                }
+            ],
+            "tool_call_id": "chatcmpl-tool-b2953723ecb5388d",
+            "response_time": 6.838,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": {
+            "reason": "irrelevant tool call"
+        }
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "{\"type\": \"tool_response\", \"content\": \"[\\n  {\\n    \\\"title\\\": \\\"benefits-and-compensation.txt\\\",\\n    \\\"body\\\": \\\"IBM Certified Architect) | R10,000 |\\\\n\\\\nCertification bonuses are paid in the month following submission of the certificate. The list of approved certifications is maintained on the learning portal and updated quarterly.\\\\n\\\\n### 5.3 Study Assistance\\\\nEmployees pursuing a formal degree or diploma relevant to their role may apply for study assistance covering up to 50% of tuition fees, capped at R30,000 per academic year. Study assistance requires a 12-month retention agreement \\\\u2014 if the employee resigns within 12 months of receiving assistance, a pro-rated repayment applies.\\\\n\\\\n---\\\\n\\\\n## 6. Wellness Benefits\\\\n\\\\n### 6.1 Employee Assistance Programme (EAP)\\\\nAll employees and their immediate family members have access to the EAP, which provides:\\\\n- Up to 6 free counselling sessions per year (telephonic or in-person)\\\\n- Legal and financial advice helpline\\\\n- Crisis support (24/7 telephonic)\\\\n\\\\nThe EAP is completely confidential. Usage is not reported to the company. Access details are provided during onboarding.\\\\n\\\\n### 6.2 Gym Subsidy\\\\nEmployees receive a monthly gym subsidy of R500, reimbursed against a valid gym membership invoice submitted through the expense platform. The subsidy applies to any registered gym facility.\\\\n\\\\n### 6.3 Mental Health Days\\\\nIn addition to sick leave, employees are entitled to 2 mental health days per calendar year \\\\u2014 paid leave that does not require a medical certificate or any justification. These days may not be carried over and are separate from the standard sick leave entitlement.\\\\n\\\\n---\\\\n\\\\n## 7.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"it-access-policy.txt\\\",\\n    \\\"body\\\": \\\"Non-standard equipment requests are assessed on a case-by-case basis and subject to budget availability.\\\\n\\\\n---\\\\n\\\\n## 3. Software and System Access\\\\n\\\\n### 3.1 Standard Access (Provisioned Automatically)\\\\nAll employees receive the following on their first day:\\\\n- Company email (Microsoft 365)\\\\n- Slack workspace\\\\n- HR portal (leave, payroll, personal details)\\\\n- Internal intranet and document management system\\\\n- Video conferencing (Microsoft Teams)\\\\n- Password manager (1Password)\\\\n\\\\n### 3.2 Role-Specific Access\\\\nAccess to role-specific systems is provisioned based on the job role specified in the IT access request form. Common role-specific systems include:\\\\n\\\\n- **Developers/Engineers:** GitHub Enterprise, Azure DevOps, watsonx.ai, watsonx.orchestrate, cloud platform consoles (AWS/Azure/IBM Cloud)\\\\n- **Analysts/Consultants:** Tableau, Power BI, watsonx.governance, data warehouse access\\\\n- **Finance:** Xero, expense management platform\\\\n- **Sales/Account Management:** Salesforce CRM\\\\n\\\\n### 3.3 Requesting Additional Access\\\\nIf an employee requires access to a system not covered by their standard role provisioning, they must:\\\\n1. Submit an access request via the IT portal\\\\n2. Provide a business justification\\\\n3. Obtain approval from their direct manager\\\\n4.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"new-hire-orientation-guide.txt\\\",\\n    \\\"body\\\": \\\"1100) | Equipment, access, technical issues |\\\\n| IT Security (security@apexsolutions.internal) | Security incidents, lost devices, suspicious emails |\\\\n| Finance (finance@apexsolutions.internal) | Expense claims, payroll queries |\\\\n| Learning & Development (learning@apexsolutions.internal) | Training budget, certification requests, study assistance |\\\\n\\\\n---\\\\n\\\\n## Tools You Will Use Daily\\\\n\\\\n| Tool | Purpose | Access |\\\\n|---|---|---|\\\\n| Microsoft 365 (Outlook, Teams, SharePoint) | Email, meetings, document collaboration | Provisioned on day 1 |\\\\n| Slack | Instant messaging and team communication | Provisioned on day 1 |\\\\n| HR Portal (hr.apexsolutions.internal) | Leave requests, payslips, personal details, policy acknowledgements | Provisioned on day 1 |\\\\n| IT Portal (it.apexsolutions.internal) | Access requests, equipment issues, software requests | Provisioned on day 1 |\\\\n| Learning Portal (learn.apexsolutions.internal) | Mandatory modules, learning budget, certifications | Provisioned on day 1 |\\\\n| Expense Platform | Expense claims and reimbursements | Request via IT portal if not provisioned |\\\\n\\\\nRole-specific tools (e.g. GitHub, watsonx platforms, Salesforce) are provisioned based on your job role. If any expected access is missing after day 1, submit a request through the IT portal.\\\\n\\\\n---\\\\n\\\\n## Office Practicalities\\\\n\\\\n**Location:** 12 Innovation Drive, Sandton.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"it-access-policy.txt\\\",\\n    \\\"body\\\": \\\"# IT Access and Equipment Policy\\\\n**Apex Solutions \\\\u2014 Information Technology**  \\\\n**Version 2.4 | Effective March 2025**\\\\n\\\\n---\\\\n\\\\n## 1. Overview\\\\n\\\\nThis policy governs the provisioning, use, and return of IT equipment and system access at Apex Solutions. All employees are required to read and acknowledge this policy before IT access is granted.\\\\n\\\\nIT access requests for new employees must be submitted by the hiring manager at least 3 working days before the employee's start date. Late requests may result in the employee not having full system access on their first day.\\\\n\\\\n---\\\\n\\\\n## 2. Standard Equipment Allocation\\\\n\\\\nAll full-time employees receive the following standard equipment upon joining:\\\\n\\\\n| Role Category | Laptop | Monitor | Accessories |\\\\n|---|---|---|---|\\\\n| Developer / Engineer | MacBook Pro 14\\\\\\\" (M3) | 27\\\\\\\" external display | Keyboard, mouse, USB-C hub |\\\\n| Analyst / Consultant | MacBook Air 15\\\\\\\" (M2) | 24\\\\\\\" external display | Keyboard, mouse |\\\\n| Operations / Support | Lenovo ThinkPad L14 | 24\\\\\\\" external display | Keyboard, mouse |\\\\n| Management | MacBook Pro 14\\\\\\\" (M3) | 27\\\\\\\" external display | Keyboard, mouse, USB-C hub |\\\\n\\\\nRequests for non-standard equipment (e.g. a second monitor, a specific keyboard, a standing desk converter) must be submitted via the IT portal and approved by the employee's manager. Non-standard equipment requests are assessed on a case-by-case basis and subject to budget availability.\\\\n\\\\n---\\\\n\\\\n## 3.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"new-hire-orientation-guide.txt\\\",\\n    \\\"body\\\": \\\"45 minutes)\\\\n- [ ] Complete: Information Security Awareness online module (approx. 30 minutes)\\\\n- [ ] Attend: New Hire Orientation Session\\\\n\\\\nYour manager will check in at the end of week one to confirm these are done.\\\\n\\\\n---\\\\n\\\\n## Orientation Session\\\\n\\\\n**What it is:** A half-day session (09:00\\\\u201313:00) run by People & Culture covering company history, values, business strategy, and how teams are structured. Includes a Q&A panel with senior leaders.\\\\n\\\\n**When it runs:** Every two weeks on a Wednesday. Your first available session after your start date is pre-booked for you unless you were hired within 3 days of a session date, in which case you attend the following one.\\\\n\\\\n**Where:** Main boardroom, 4th floor (or virtually via Teams for remote employees \\\\u2014 a link is sent with your booking confirmation).\\\\n\\\\n**What to bring:** Your questions. The Q&A panel is genuinely open \\\\u2014 ask what you want to know about the company.\\\\n\\\\nIf you need to change your orientation booking, contact hr@apexsolutions.internal at least 2 working days before the session.\\\\n\\\\n---\\\\n\\\\n## Key People to Know\\\\n\\\\n| Role | Who to contact about |\\\\n|---|---|\\\\n| Your direct manager | Work priorities, role expectations, leave approval |\\\\n| Your HR buddy | General onboarding questions, finding your feet socially |\\\\n| People & Culture (hr@apexsolutions.internal) | HR policies, leave, benefits, contracts |\\\\n| IT Helpdesk (ext.\\\"\\n  }\\n]\", \"name\": \"hr_policy_knowledge_base\", \"tool_call_id\": \"chatcmpl-tool-b2953723ecb5388d\"}",
+            "type": "tool_response",
+            "event": "run.step.delta",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 0.65,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": {
+            "reason": "runtime error"
+        }
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "Employees pursuing a formal degree or diploma relevant to their role may be eligible for study assistance covering up to 50% of tuition fees, capped at R30,000 per academic year. This assistance requires a 12-month retention agreement, and if the employee resigns within 12 months of receiving assistance, a pro-rated repayment applies. For more information or to apply, employees can contact Learning & Development at learning@apexsolutions.internal.",
+            "type": "conversational_search",
+            "event": "message.created",
+            "conversational_search_metadata": {
+                "tool_call_id": "chatcmpl-tool-b2953723ecb5388d"
+            },
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 3.087,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "user",
+            "content": "Thank you for the details. I’ll reach out to Learning & Development for next steps.",
+            "type": "text",
+            "event": null,
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": null,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    },
+    {
+        "message": {
+            "role": "assistant",
+            "content": "You're welcome. I'm glad I could help clarify the study assistance policy for you. If you have any more HR-related questions or need further assistance, feel free to ask. Have a great day.",
+            "type": "text",
+            "event": "message.created",
+            "conversational_search_metadata": null,
+            "tool_calls": null,
+            "tool_call_id": null,
+            "response_time": 6.568,
+            "thread_id": null,
+            "message_id": null,
+            "trace_id": null,
+            "run_id": null
+        },
+        "reason": null
+    }
+]

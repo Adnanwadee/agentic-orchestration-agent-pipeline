@@ -1,0 +1,22 @@
+{
+  "agent": "hr_onboarding_agent",
+  "goals": {
+    "summarize": []
+  },
+  "goal_details": [
+    {
+      "name": "summarize",
+      "type": "text",
+      "response": "There is not enough approved policy information to confirm whether Apex Solutions reimburses private-school or university tuition fees for employees' children or other dependents. The approved Study Assistance policy applies to employees pursuing a formal degree or diploma relevant to their role and does not establish dependent tuition reimbursement.",
+      "keywords": [
+        "not enough approved policy information",
+        "children or other dependents",
+        "Study Assistance",
+        "employees pursuing a formal degree or diploma",
+        "does not establish dependent tuition reimbursement"
+      ]
+    }
+  ],
+  "story": "An employee asks whether dependent school or university fees are reimbursed, which is not established by the approved HR policy sources.",
+  "starting_sentence": "Does Apex Solutions reimburse private-school or university tuition fees for employees' children or other dependents?"
+}

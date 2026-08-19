@@ -1,0 +1,97 @@
+[
+    {
+        "role": "user",
+        "content": "What should I do if I suspect a security incident?",
+        "type": "text",
+        "event": null,
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": null,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "{\"type\": \"tool_call\", \"name\": \"hr_policy_knowledge_base\", \"args\": {\"query\": \"security incident\"}, \"id\": \"chatcmpl-tool-b49af4b29d534803\"}",
+        "type": "tool_call",
+        "event": "run.step.delta",
+        "conversational_search_metadata": null,
+        "tool_calls": [
+            {
+                "id": "chatcmpl-tool-b49af4b29d534803",
+                "function": {
+                    "name": "hr_policy_knowledge_base",
+                    "arguments": "{\"query\": \"security incident\"}"
+                },
+                "type": "function"
+            }
+        ],
+        "tool_call_id": "chatcmpl-tool-b49af4b29d534803",
+        "response_time": 7.015,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "{\"type\": \"tool_response\", \"content\": \"[\\n  {\\n    \\\"title\\\": \\\"it-access-policy.txt\\\",\\n    \\\"body\\\": \\\"---\\\\n\\\\n## 6. Data Handling and Security\\\\n\\\\nEmployees must store work files on company-approved cloud storage (SharePoint/OneDrive). Local storage of sensitive company or customer data is prohibited unless explicitly approved for offline work scenarios.\\\\n\\\\nSensitive data categories that require additional care:\\\\n- Customer personal information (names, contact details, account data)\\\\n- Financial records and contracts\\\\n- Employee records\\\\n- Intellectual property and proprietary product information\\\\n\\\\nIf an employee suspects a security incident (lost device, suspicious email, unauthorised access), they must report it to the IT Security team immediately at security@apexsolutions.internal. Do not attempt to investigate or resolve a suspected security incident independently.\\\\n\\\\n---\\\\n\\\\n## 7. Equipment Care and Loss\\\\n\\\\nEmployees are responsible for the reasonable care of company equipment. In the event of accidental damage, the employee must notify IT within 24 hours. Intentional damage or gross negligence may result in the employee being held liable for repair or replacement costs.\\\\n\\\\nLost or stolen equipment must be reported to IT Security and the employee's manager immediately. IT Security will remotely wipe the device as soon as the loss is reported.\\\\n\\\\n---\\\\n\\\\n## 8. Offboarding \\\\u2014 Equipment Return and Access Revocation\\\\n\\\\nUpon resignation or termination, employees must return all company equipment on or before their last working day. All system access will be revoked at end-of-day on the employee's last day.\\\\n\\\\nEquipment must be returned in its original condition (reasonable wear and tear accepted) along with all accessories. Failure to return equipment may result in deductions from the final pay.\\\\n\\\\n---\\\\n\\\\n## 9.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"new-hire-orientation-guide.txt\\\",\\n    \\\"body\\\": \\\"45 minutes)\\\\n- [ ] Complete: Information Security Awareness online module (approx. 30 minutes)\\\\n- [ ] Attend: New Hire Orientation Session\\\\n\\\\nYour manager will check in at the end of week one to confirm these are done.\\\\n\\\\n---\\\\n\\\\n## Orientation Session\\\\n\\\\n**What it is:** A half-day session (09:00\\\\u201313:00) run by People & Culture covering company history, values, business strategy, and how teams are structured. Includes a Q&A panel with senior leaders.\\\\n\\\\n**When it runs:** Every two weeks on a Wednesday. Your first available session after your start date is pre-booked for you unless you were hired within 3 days of a session date, in which case you attend the following one.\\\\n\\\\n**Where:** Main boardroom, 4th floor (or virtually via Teams for remote employees \\\\u2014 a link is sent with your booking confirmation).\\\\n\\\\n**What to bring:** Your questions. The Q&A panel is genuinely open \\\\u2014 ask what you want to know about the company.\\\\n\\\\nIf you need to change your orientation booking, contact hr@apexsolutions.internal at least 2 working days before the session.\\\\n\\\\n---\\\\n\\\\n## Key People to Know\\\\n\\\\n| Role | Who to contact about |\\\\n|---|---|\\\\n| Your direct manager | Work priorities, role expectations, leave approval |\\\\n| Your HR buddy | General onboarding questions, finding your feet socially |\\\\n| People & Culture (hr@apexsolutions.internal) | HR policies, leave, benefits, contracts |\\\\n| IT Helpdesk (ext.\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"code-of-conduct.txt\\\",\\n    \\\"body\\\": \\\"Retaliation against an employee for making a good-faith report is itself a violation of this policy and will be dealt with seriously.\\\\n\\\\n---\\\\n\\\\n## 6. Disciplinary Process\\\\n\\\\nViolations of this policy are handled through Apex Solutions' standard disciplinary process:\\\\n\\\\n1. **Informal discussion** \\\\u2014 for minor first-time issues, the manager addresses the behaviour directly with the employee\\\\n2. **Formal written warning** \\\\u2014 issued for more serious violations or repeated minor violations\\\\n3. **Final written warning** \\\\u2014 issued when prior warnings have not resulted in improvement\\\\n4. **Dismissal** \\\\u2014 for gross misconduct or failure to improve after warnings\\\\n\\\\nCertain behaviours (fraud, sexual harassment, serious safety violations) may result in immediate dismissal without prior warning.\\\\n\\\\nEmployees subject to formal disciplinary action have the right to be accompanied by a colleague or union representative during meetings.\\\\n\\\\n---\\\\n\\\\n## 7. New Employees\\\\n\\\\nAll new employees are required to complete the following during their first week:\\\\n- Read and acknowledge this Code of Conduct\\\\n- Complete the online harassment prevention module (available on the learning portal)\\\\n- Attend the orientation session covering company values and workplace expectations\\\\n\\\\nAcknowledgement is recorded in the HR portal. Failure to complete these items within the first 10 working days will be flagged to the employee's manager.\\\\n\\\\n---\\\\n\\\\n*For questions about this policy, contact People & Culture at hr@apexsolutions.internal*\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"it-access-policy.txt\\\",\\n    \\\"body\\\": \\\"Submit an access request via the IT portal\\\\n2. Provide a business justification\\\\n3. Obtain approval from their direct manager\\\\n4. For sensitive systems (financial data, customer data, production environments), additional sign-off from the IT Security team is required\\\\n\\\\nAccess requests are typically fulfilled within 2 working days for standard systems and up to 5 working days for systems requiring security review.\\\\n\\\\n---\\\\n\\\\n## 4. Acceptable Use\\\\n\\\\nCompany-issued equipment and systems are provided for business purposes. Incidental personal use is permitted provided it does not:\\\\n- Interfere with work responsibilities\\\\n- Consume excessive bandwidth or storage\\\\n- Involve accessing illegal content or pirated software\\\\n- Put company data or systems at risk\\\\n\\\\nEmployees must not:\\\\n- Install unlicensed or unapproved software on company devices\\\\n- Disable or tamper with security software (antivirus, endpoint management, MDM)\\\\n- Connect company devices to untrusted networks without using the company VPN\\\\n- Share login credentials with any other person, including colleagues\\\\n\\\\n---\\\\n\\\\n## 5. Remote Work and VPN\\\\n\\\\nEmployees working remotely must connect to the company VPN for any access to internal systems. The VPN client is pre-installed on all company devices.\\\\n\\\\nWhen working from a public location (caf\\\\u00e9, airport, hotel), employees must use the VPN at all times and avoid conducting sensitive conversations or displaying sensitive information in public view.\\\\n\\\\n---\\\\n\\\\n## 6. Data Handling and Security\\\\n\\\\nEmployees must store work files on company-approved cloud storage (SharePoint/OneDrive).\\\"\\n  },\\n  {\\n    \\\"title\\\": \\\"new-hire-orientation-guide.txt\\\",\\n    \\\"body\\\": \\\"If any expected access is missing after day 1, submit a request through the IT portal.\\\\n\\\\n---\\\\n\\\\n## Office Practicalities\\\\n\\\\n**Location:** 12 Innovation Drive, Sandton. Parking is available in the basement \\\\u2014 register your vehicle registration with reception on your first day to receive an access tag.\\\\n\\\\n**Access card:** Issued by reception on day 1. Keep it with you at all times in the office. Lost cards must be reported immediately to reception and IT Security.\\\\n\\\\n**Kitchen and breakrooms:** Fully stocked with coffee, tea, and filtered water. A catered lunch is provided on Tuesdays in the main kitchen. Halal, vegetarian, and vegan options are always available \\\\u2014 flag other dietary requirements to HR.\\\\n\\\\n**Dress code:** Smart casual. Client-facing days or external events may require formal dress \\\\u2014 your manager will advise.\\\\n\\\\n**Meeting rooms:** Bookable through the Outlook calendar system. Rooms not used within 15 minutes of the booking start time are automatically released.\\\\n\\\\n---\\\\n\\\\n## Remote and Hybrid Working\\\\n\\\\nIf your role is hybrid, your expected in-office days will be communicated by your manager in your first week. The company minimum is 3 in-office days per week unless your role is designated fully remote.\\\\n\\\\nFor your first two weeks, you are expected to be in the office full-time regardless of your standard arrangement. This is to support your onboarding \\\\u2014 meeting people in person in your first fortnight makes a measurable difference to how quickly you settle in.\\\\n\\\\nVPN is required for remote access to all internal systems.\\\"\\n  }\\n]\", \"name\": \"hr_policy_knowledge_base\", \"tool_call_id\": \"chatcmpl-tool-b49af4b29d534803\"}",
+        "type": "tool_response",
+        "event": "run.step.delta",
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 0.528,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "If you suspect a security incident, you must report it to the IT Security team immediately at security@apexsolutions.internal. Do not attempt to investigate or resolve a suspected security incident independently.",
+        "type": "conversational_search",
+        "event": "message.created",
+        "conversational_search_metadata": {
+            "tool_call_id": "chatcmpl-tool-b49af4b29d534803"
+        },
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 5.681,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "user",
+        "content": "Got it, I’ll report it right away.",
+        "type": "text",
+        "event": null,
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": null,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    },
+    {
+        "role": "assistant",
+        "content": "I'm glad I could help with the information. If you have any other questions or need further assistance, feel free to ask. Have a great day!",
+        "type": "text",
+        "event": "message.created",
+        "conversational_search_metadata": null,
+        "tool_calls": null,
+        "tool_call_id": null,
+        "response_time": 5.853,
+        "thread_id": null,
+        "message_id": null,
+        "trace_id": null,
+        "run_id": null
+    }
+]

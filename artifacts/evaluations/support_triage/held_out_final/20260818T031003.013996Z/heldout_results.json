@@ -1,0 +1,662 @@
+{
+  "classifier_prompt_sha256": "a78f13a71cb344429502ca2aeb0b36281608cfbea6c45c6bb509b678e3d3e9b6",
+  "classifier_prompt_version": "support-triage-classifier-v2",
+  "classifier_repair_instruction_sha256": "b55bf893bba9e0373d70a4f839741b46ebacd82c1da94b622377b465e052b39b",
+  "classifier_repair_instruction_version": "support-triage-classifier-repair-v1",
+  "confidence_threshold": 0.8,
+  "drafter_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+  "drafter_prompt_version": "support-triage-drafter-v3",
+  "executed_ticket_count": 15,
+  "final_status": "HELD_OUT_INFERENCE_COMPLETE",
+  "freeze_version": "g3-support-triage-dataset-v1",
+  "frozen_hashes": {
+    "support_tickets_ground_truth": "ef1a83c4a379065917bd4220f4db8eaed6ea3ada2715a4c31a6b1948d2075f81",
+    "support_tickets_seed": "40901dbbc12ec559ca1b5fc257adb8b1a3406eac08caca66da970e323ff5d7b3",
+    "support_tickets_split": "c56860c4cdf337a9c7c1fa7b465fc2a2bde0703871ed2d3627987c822a798be2"
+  },
+  "frozen_inference_hashes": {
+    "support_tickets_seed": "40901dbbc12ec559ca1b5fc257adb8b1a3406eac08caca66da970e323ff5d7b3",
+    "support_tickets_split": "c56860c4cdf337a9c7c1fa7b465fc2a2bde0703871ed2d3627987c822a798be2"
+  },
+  "held_out_ids": [
+    "T05",
+    "T06",
+    "T07",
+    "T11",
+    "T13",
+    "T15",
+    "T18",
+    "T20",
+    "T22",
+    "T24",
+    "T25",
+    "T26",
+    "T28",
+    "T29",
+    "T30"
+  ],
+  "metrics": {
+    "auto_routed_count": 12,
+    "category_correct": 15,
+    "category_denominator": 15,
+    "draft_failed_count": 0,
+    "human_review_count": 3,
+    "structured_output_count": 15,
+    "urgency_correct": 13,
+    "urgency_denominator": 15
+  },
+  "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+  "results": [
+    {
+      "assigned_team": "Triage \u2014 Human",
+      "attempt_count": 1,
+      "classification": {
+        "category": "technical",
+        "confidence": 0.9,
+        "reasoning": "Staff unable to log in, critical business impact due to upcoming client presentation",
+        "secondary_category": "account",
+        "urgency": "critical"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": null,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": null,
+      "draft_model_id": null,
+      "draft_prompt_sha256": null,
+      "draft_prompt_version": null,
+      "draft_response": null,
+      "draft_token_usage": null,
+      "draft_validation_status": null,
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.9031282002106309,
+      "review_reasons": [
+        "secondary_category_present"
+      ],
+      "review_required": true,
+      "sla": "Immediate",
+      "status": "human_review",
+      "ticket_id": "T05",
+      "ticket_text": "Everything is down. None of our staff can log in. We have a client presentation in 2 hours.",
+      "token_usage": {
+        "completion_tokens": 49,
+        "prompt_tokens": 665,
+        "total_tokens": 714
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Customer Success",
+      "attempt_count": 1,
+      "classification": {
+        "category": "account",
+        "confidence": 0.9,
+        "reasoning": "The customer is asking for help changing their account email address, which is an account administration task.",
+        "secondary_category": null,
+        "urgency": "low"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.5308023998513818,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about changing email address on account.\n\nAssigned team: Customer Success. SLA target: 3 business days.",
+      "draft_token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 267,
+        "total_tokens": 279
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 1.58184319967404,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "3 business days",
+      "status": "auto_routed",
+      "ticket_id": "T06",
+      "ticket_text": "How do I change the email address on my account?",
+      "token_usage": {
+        "completion_tokens": 53,
+        "prompt_tokens": 654,
+        "total_tokens": 707
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Billing \u2014 Standard",
+      "attempt_count": 1,
+      "classification": {
+        "category": "billing",
+        "confidence": 0.9,
+        "reasoning": "The customer was charged despite cancelling their subscription and is requesting a refund, indicating a billing issue with potential financial impact.",
+        "secondary_category": null,
+        "urgency": "high"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.4602596997283399,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about Incorrect subscription charge after cancellation.\n\nAssigned team: Billing \u2014 Standard. SLA target: 4 hours.",
+      "draft_token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 288,
+        "total_tokens": 300
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.8329472001641989,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "4 hours",
+      "status": "auto_routed",
+      "ticket_id": "T07",
+      "ticket_text": "I cancelled my subscription 3 weeks ago but I was still charged this month. I want a refund and I want to know why this happened.",
+      "token_usage": {
+        "completion_tokens": 58,
+        "prompt_tokens": 672,
+        "total_tokens": 730
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Billing \u2014 Standard",
+      "attempt_count": 1,
+      "classification": {
+        "category": "billing",
+        "confidence": 0.9,
+        "reasoning": "The customer is requesting a copy of their latest invoice, which is related to billing, and the context suggests a non-urgent request for renewal planning.",
+        "secondary_category": null,
+        "urgency": "low"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.4813104001805186,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about request for latest invoice copy.\n\nAssigned team: Billing \u2014 Standard. SLA target: 3 business days.",
+      "draft_token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 274,
+        "total_tokens": 286
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.9080353998579085,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "3 business days",
+      "status": "auto_routed",
+      "ticket_id": "T11",
+      "ticket_text": "Can you send me a copy of my latest invoice for renewal planning?",
+      "token_usage": {
+        "completion_tokens": 65,
+        "prompt_tokens": 657,
+        "total_tokens": 722
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Engineering \u2014 Support",
+      "attempt_count": 1,
+      "classification": {
+        "category": "technical",
+        "confidence": 0.9,
+        "reasoning": "The ticket reports a specific issue with the application after an update, indicating a potential malfunction or data display failure.",
+        "secondary_category": null,
+        "urgency": "high"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.4737074002623558,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about blank data on charts after dashboard update.\n\nAssigned team: Engineering \u2014 Support. SLA target: 2 hours.",
+      "draft_token_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 275,
+        "total_tokens": 289
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.7573656998574734,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "2 hours",
+      "status": "auto_routed",
+      "ticket_id": "T13",
+      "ticket_text": "The dashboard loads, but every chart shows blank data after this morning's update.",
+      "token_usage": {
+        "completion_tokens": 56,
+        "prompt_tokens": 659,
+        "total_tokens": 715
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Customer Success",
+      "attempt_count": 1,
+      "classification": {
+        "category": "account",
+        "confidence": 0.9,
+        "reasoning": "The customer is requesting a change to their account profile, which falls under account administration.",
+        "secondary_category": null,
+        "urgency": "low"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.44894020026549697,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about account profile display name update.\n\nAssigned team: Customer Success. SLA target: 3 business days.",
+      "draft_token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 269,
+        "total_tokens": 281
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.7181398998945951,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "3 business days",
+      "status": "auto_routed",
+      "ticket_id": "T15",
+      "ticket_text": "Please help me update the display name shown on my account profile.",
+      "token_usage": {
+        "completion_tokens": 51,
+        "prompt_tokens": 656,
+        "total_tokens": 707
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Customer Success",
+      "attempt_count": 1,
+      "classification": {
+        "category": "general",
+        "confidence": 0.9,
+        "reasoning": "The ticket is about providing feedback on a new feature, which is not a billing, technical, or account issue, and is explicitly not blocking the customer's work.",
+        "secondary_category": null,
+        "urgency": "low"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.45408529974520206,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about feedback on new menu layout.\n\nAssigned team: Customer Success. SLA target: 2 business days.",
+      "draft_token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 274,
+        "total_tokens": 286
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.8339335997588933,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "2 business days",
+      "status": "auto_routed",
+      "ticket_id": "T18",
+      "ticket_text": "I have feedback about the new menu layout; it is confusing but not blocking my work.",
+      "token_usage": {
+        "completion_tokens": 66,
+        "prompt_tokens": 661,
+        "total_tokens": 727
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Triage \u2014 Human",
+      "attempt_count": 1,
+      "classification": {
+        "category": "account",
+        "confidence": 0.8,
+        "reasoning": "The ticket mentions a login issue and an account lock, indicating an account-related problem, with a potential technical cause.",
+        "secondary_category": "technical",
+        "urgency": "medium"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": null,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": null,
+      "draft_model_id": null,
+      "draft_prompt_sha256": null,
+      "draft_prompt_version": null,
+      "draft_response": null,
+      "draft_token_usage": null,
+      "draft_validation_status": null,
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.7471373002044857,
+      "review_reasons": [
+        "secondary_category_present"
+      ],
+      "review_required": true,
+      "sla": "Immediate",
+      "status": "human_review",
+      "ticket_id": "T20",
+      "ticket_text": "The login page says my account is locked after one failed attempt.",
+      "token_usage": {
+        "completion_tokens": 58,
+        "prompt_tokens": 656,
+        "total_tokens": 714
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Engineering \u2014 Support",
+      "attempt_count": 1,
+      "classification": {
+        "category": "technical",
+        "confidence": 0.9,
+        "reasoning": "The ticket mentions a scheduled report not running, which is a technical issue, and executives needing the numbers urgently before a morning review, indicating time-sensitive impact.",
+        "secondary_category": null,
+        "urgency": "high"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.5012067998759449,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about missed scheduled report.\n\nAssigned team: Engineering \u2014 Support. SLA target: 2 hours.",
+      "draft_token_usage": {
+        "completion_tokens": 11,
+        "prompt_tokens": 276,
+        "total_tokens": 287
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.9186152000911534,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "2 hours",
+      "status": "auto_routed",
+      "ticket_id": "T22",
+      "ticket_text": "A scheduled report did not run overnight and executives need the numbers before the morning review.",
+      "token_usage": {
+        "completion_tokens": 66,
+        "prompt_tokens": 660,
+        "total_tokens": 726
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Billing \u2014 Standard",
+      "attempt_count": 1,
+      "classification": {
+        "category": "billing",
+        "confidence": 0.9,
+        "reasoning": "The customer is asking for an explanation about billing options, which is a general inquiry.",
+        "secondary_category": null,
+        "urgency": "low"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.4542819997295737,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about monthly vs annual billing difference.\n\nAssigned team: Billing \u2014 Standard. SLA target: 3 business days.",
+      "draft_token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 270,
+        "total_tokens": 282
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.6941362000070512,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "3 business days",
+      "status": "auto_routed",
+      "ticket_id": "T24",
+      "ticket_text": "Please explain the difference between monthly and annual billing.",
+      "token_usage": {
+        "completion_tokens": 51,
+        "prompt_tokens": 653,
+        "total_tokens": 704
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Engineering \u2014 Support",
+      "attempt_count": 1,
+      "classification": {
+        "category": "technical",
+        "confidence": 0.9,
+        "reasoning": "The ticket reports a specific technical issue with the mobile app freezing when attaching a large file, indicating a performance or functionality problem.",
+        "secondary_category": null,
+        "urgency": "medium"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.47406989987939596,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about Mobile app freezing when attaching large file.\n\nAssigned team: Engineering \u2014 Support. SLA target: 1 business day.",
+      "draft_token_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 275,
+        "total_tokens": 289
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.7402313002385199,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "1 business day",
+      "status": "auto_routed",
+      "ticket_id": "T25",
+      "ticket_text": "The mobile app freezes when I attach a file larger than 10 MB.",
+      "token_usage": {
+        "completion_tokens": 59,
+        "prompt_tokens": 658,
+        "total_tokens": 717
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Customer Success",
+      "attempt_count": 1,
+      "classification": {
+        "category": "account",
+        "confidence": 0.8,
+        "reasoning": "The ticket mentions an expired invitation link and account setup issue, which relates to account administration.",
+        "secondary_category": null,
+        "urgency": "medium"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.43974770000204444,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about Expired invitation link.\n\nAssigned team: Customer Success. SLA target: 1 business day.",
+      "draft_token_usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 269,
+        "total_tokens": 279
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.6524253999814391,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "1 business day",
+      "status": "auto_routed",
+      "ticket_id": "T26",
+      "ticket_text": "My invitation link expired before I could finish setting up the account.",
+      "token_usage": {
+        "completion_tokens": 52,
+        "prompt_tokens": 656,
+        "total_tokens": 708
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Triage \u2014 Human",
+      "attempt_count": 1,
+      "classification": {
+        "category": "billing",
+        "confidence": 0.8,
+        "reasoning": "Billing issue for removed seats and duplicate inactive accounts",
+        "secondary_category": "account",
+        "urgency": "high"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": null,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": null,
+      "draft_model_id": null,
+      "draft_prompt_sha256": null,
+      "draft_prompt_version": null,
+      "draft_response": null,
+      "draft_token_usage": null,
+      "draft_validation_status": null,
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.6366890999488533,
+      "review_reasons": [
+        "secondary_category_present"
+      ],
+      "review_required": true,
+      "sla": "Immediate",
+      "status": "human_review",
+      "ticket_id": "T28",
+      "ticket_text": "We are being billed for seats that were removed last week, and the user list now shows duplicate inactive accounts.",
+      "token_usage": {
+        "completion_tokens": 44,
+        "prompt_tokens": 665,
+        "total_tokens": 709
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Engineering \u2014 Support",
+      "attempt_count": 1,
+      "classification": {
+        "category": "technical",
+        "confidence": 0.9,
+        "reasoning": "The ticket reports a specific technical issue with exported CSV files containing garbled characters, indicating a product malfunction.",
+        "secondary_category": null,
+        "urgency": "medium"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.6557324999012053,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about Garbled characters in exported CSV customer names with accent marks.\n\nAssigned team: Engineering \u2014 Support. SLA target: 1 business day.",
+      "draft_token_usage": {
+        "completion_tokens": 19,
+        "prompt_tokens": 277,
+        "total_tokens": 296
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.7818948999047279,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "1 business day",
+      "status": "auto_routed",
+      "ticket_id": "T29",
+      "ticket_text": "Exported CSV files contain garbled characters for every customer name with an accent mark.",
+      "token_usage": {
+        "completion_tokens": 55,
+        "prompt_tokens": 660,
+        "total_tokens": 715
+      },
+      "validation_status": "valid"
+    },
+    {
+      "assigned_team": "Customer Success",
+      "attempt_count": 1,
+      "classification": {
+        "category": "general",
+        "confidence": 0.9,
+        "reasoning": "The customer is asking for information about a status page, which is a general inquiry.",
+        "secondary_category": null,
+        "urgency": "low"
+      },
+      "classification_valid": true,
+      "draft_attempt_count": 1,
+      "draft_error_code": null,
+      "draft_error_message": null,
+      "draft_latency_seconds": 0.42507730005308986,
+      "draft_model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+      "draft_prompt_sha256": "80fc2ccaa4a0f14ec918a6324140b3da074388ab1f1a61d19e16556d9b8ddc23",
+      "draft_prompt_version": "support-triage-drafter-v3",
+      "draft_response": "Thank you for reaching out about status page for incident checking.\n\nAssigned team: Customer Success. SLA target: 2 business days.",
+      "draft_token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 271,
+        "total_tokens": 283
+      },
+      "draft_validation_status": "valid",
+      "error_code": null,
+      "error_message": null,
+      "latency_seconds": 0.7183873998001218,
+      "review_reasons": [],
+      "review_required": false,
+      "sla": "2 business days",
+      "status": "auto_routed",
+      "ticket_id": "T30",
+      "ticket_text": "Is there a status page where I can check incidents before opening a ticket?",
+      "token_usage": {
+        "completion_tokens": 51,
+        "prompt_tokens": 658,
+        "total_tokens": 709
+      },
+      "validation_status": "valid"
+    }
+  ],
+  "run_started_utc": "2026-08-18T03:10:03.013996Z",
+  "scored": true
+}

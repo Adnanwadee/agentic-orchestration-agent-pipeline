@@ -1,0 +1,23 @@
+{
+  "agent": "hr_onboarding_agent",
+  "goals": {
+    "summarize": []
+  },
+  "goal_details": [
+    {
+      "name": "summarize",
+      "type": "text",
+      "response": "On Day 1, new hires have a 09:00 welcome meeting with their manager, 09:30 IT setup, 10:30 HR onboarding session, 12:00 welcome lunch, 13:30 self-guided online modules, 15:00 buddy introductory call, and 16:00 free time to explore the intranet and team documentation.",
+      "keywords": [
+        "09:00 welcome meeting",
+        "09:30 IT setup",
+        "10:30 HR onboarding session",
+        "12:00 welcome lunch",
+        "15:00",
+        "buddy"
+      ]
+    }
+  ],
+  "story": "A new hire asks what their first day orientation schedule looks like.",
+  "starting_sentence": "What happens on my first day of orientation?"
+}

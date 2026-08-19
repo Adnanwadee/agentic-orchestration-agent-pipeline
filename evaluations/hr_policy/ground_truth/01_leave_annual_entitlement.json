@@ -1,0 +1,21 @@
+{
+  "agent": "hr_onboarding_agent",
+  "goals": {
+    "summarize": []
+  },
+  "goal_details": [
+    {
+      "name": "summarize",
+      "type": "text",
+      "response": "All full-time employees are entitled to 21 working days of paid annual leave per calendar year.",
+      "keywords": [
+        "21 working days",
+        "paid annual leave",
+        "per calendar year",
+        "full-time employees"
+      ]
+    }
+  ],
+  "story": "A full-time employee asks the HR onboarding assistant about their annual leave entitlement.",
+  "starting_sentence": "How many days of annual leave do full-time employees get each year?"
+}

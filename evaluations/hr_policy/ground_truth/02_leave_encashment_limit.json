@@ -1,0 +1,21 @@
+{
+  "agent": "hr_onboarding_agent",
+  "goals": {
+    "summarize": []
+  },
+  "goal_details": [
+    {
+      "name": "summarize",
+      "type": "text",
+      "response": "Annual leave may not be encashed while an employee is still employed. It may be encashed only upon resignation or termination, when unused accrued leave is paid out at the employee's daily rate.",
+      "keywords": [
+        "may not be encashed",
+        "resignation or termination",
+        "unused accrued leave",
+        "daily rate"
+      ]
+    }
+  ],
+  "story": "An employee asks whether unused annual leave can be paid out during employment.",
+  "starting_sentence": "Can I cash out my annual leave while I am still employed?"
+}
